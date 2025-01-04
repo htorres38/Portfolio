@@ -1,0 +1,216 @@
+body {
+  font-family: 'Georgia', serif;  /* Elegant, rustic feel */
+  background-color: #f9f9f9;  /* Light background for a clean look */
+  color: #4f4f4f;  /* Dark gray text for readability */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+  background-color: #e0f0d9;  /* Light green for a fresh, natural feel */
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Main Title in Header */
+header h1 {
+  font-size: 2.5em;
+  color: #3d5a47;  /* Dark green */
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Navigation Styling */
+nav {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #3d5a47;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+nav a:hover {
+  color: #4a8a53;  /* Slightly brighter green on hover */
+}
+
+/* Profile Section */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Centers horizontally */
+  justify-content: center;  /* Centers vertically */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Profile Image */
+.home img {
+  border-radius: 0%;  /* Remove the circular border radius */
+  border: 5px solid #d1e8c3;  /* Light green border */
+  margin-bottom: 20px;
+  width: 240px;  /* Set specific width */
+  height: 350px;  /* Set specific height */
+  object-fit: cover;
+}
+
+/* Profile Name and Title */
+.home h2 {
+  font-size: 2.5em;
+  color: #3d5a47;
+  margin: 10px 0;
+}
+
+.home h3 {
+  font-size: 1.3em;
+  color: #6c7d58;  /* Soft olive green */
+  margin: 0;
+}
+
+/* Bio Section */
+.bio {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bio h2 {
+  font-size: 2.2em;
+  color: #3d5a47;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bio p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #4f4f4f;
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #e0f0d9;
+  padding: 40px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact h3 {
+  font-size: 2em;
+  color: #3d5a47;
+  margin-bottom: 20px;
+}
+
+.contact a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.contact img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.contact img:hover {
+  transform: scale(1.1);
+}
+
+/* Letter Section */
+.letter {
+  background-color: #e0f0d9;
+  padding: 40px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.letter h2 {
+  font-size: 2.5em;
+  color: #3d5a47;
+  margin-bottom: 20px;
+}
+
+.letter img {
+  width: 100%;  /* Full width of the container */
+  max-width: 600px;  /* Maximum width to keep it reasonable */
+  height: auto;  /* Maintain aspect ratio */
+  object-fit: contain;  /* Prevent image distortion */
+  border: 2px solid #d1e8c3;  /* Light green border */
+  border-radius: 10px;
+}
+
+/* Style the download link to look like a button */
+.download-link {
+  display: inline-block;
+  background-color: #3d5a47;  /* Dark green */
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for the link */
+.download-link:hover {
+  background-color: #4a8a53;  /* Slightly brighter green */
+  transform: scale(1.05);  /* Slightly increase the size */
+}
+
+/* Active state for the link */
+.download-link:active {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus state for accessibility */
+.download-link:focus {
+  outline: 2px solid #4a8a53;
+  outline-offset: 4px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav {
+    top: 10px;
+    right: 10px;
+  }
+
+  .home img {
+    width: 180px;
+    height: 250px;
+  }
+
+  .bio, .contact, .letter {
+    padding: 30px 20px;
+  }
+
+  .letter img {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+  }
+}

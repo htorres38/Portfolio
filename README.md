@@ -1,0 +1,38 @@
+# Haylee Torres – Portfolio  
+
+This repository contains a collection of projects I’ve completed while studying Computer Information Systems at West Texas A&M University. The projects include coursework and personal work that show my experience with programming, databases, and web development.  
+
+🔗 Live Portfolio Website: [htorres38.github.io/Portfolio](https://htorres38.github.io/Portfolio/)  
+
+I update this portfolio as I complete new projects or make improvements to existing ones.  
+
+---
+
+## Projects  
+
+### Portfolio Website  
+- A personal website I built from scratch with HTML and CSS. It includes my projects, resume, and recommendations.  
+- **Technologies:** HTML, CSS  
+
+### IT Inventory Tracker  
+- A database project built in my Database Systems Design course. It tracks IT devices, software licenses, and maintenance schedules. The goal was to improve data accuracy and reduce errors.  
+- **Technologies:** MySQL, Database Design, SQL Programming  
+
+### Astrology Calendar  
+- A C# program where the user enters their zodiac sign and gets information about upcoming astrological events. It has input validation and a simple interface.  
+- **Technologies:** C#, HTML/CSS, Razor Pages, VS Code 
+
+### Amarillo Climate Data Analysis  
+- A project that stores and analyzes Amarillo, TX climate data such as temperature, rainfall, and air quality. I used Power BI to create visualizations.  
+- **Technologies:** MySQL, SQL Queries, Power BI  
+
+---
+
+## About Me  
+I am working on my **BBA in Computer Information Systems** and plan to graduate in Fall 2025.
+
+---
+
+## Contact  
+- **Email:** hjade7255@outlook.com  
+- **LinkedIn:** [linkedin.com/in/hayleejtorres](https://www.linkedin.com/in/hayleejtorres)  

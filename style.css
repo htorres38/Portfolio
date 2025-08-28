@@ -1,29 +1,27 @@
 body {
-  font-family: 'Georgia', serif;  /* Elegant, rustic feel */
-  background-color: #f9f9f9;  /* Light background for a clean look */
-  color: #4f4f4f;  /* Dark gray text for readability */
+  font-family: 'Georgia', serif;  
+  background-color: #f9f9f9;  
+  color: #4f4f4f;  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Header Styling */
+
 header {
-  background-color: #e0f0d9;  /* Light green for a fresh, natural feel */
+  background-color: #e0f0d9;  
   padding: 40px;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-/* Main Title in Header */
 header h1 {
   font-size: 2.5em;
-  color: #3d5a47;  /* Dark green */
+  color: #3d5a47;  
   margin: 0;
   font-weight: bold;
 }
 
-/* Navigation Styling */
 nav {
   position: fixed;
   top: 20px;
@@ -53,17 +51,15 @@ nav a:hover {
   text-align: center;
 }
 
-/* Profile Image */
 .home img {
-  border-radius: 0%;  /* Remove the circular border radius */
-  border: 5px solid #d1e8c3;  /* Light green border */
+  border-radius: 0%;  
+  border: 5px solid #d1e8c3; 
   margin-bottom: 20px;
-  width: 240px;  /* Set specific width */
-  height: 350px;  /* Set specific height */
+  width: 240px; 
+  height: 350px; 
   object-fit: cover;
 }
 
-/* Profile Name and Title */
 .home h2 {
   font-size: 2.5em;
   color: #3d5a47;
@@ -72,11 +68,10 @@ nav a:hover {
 
 .home h3 {
   font-size: 1.3em;
-  color: #6c7d58;  /* Soft olive green */
+  color: #6c7d58; 
   margin: 0;
 }
 
-/* Bio Section */
 .bio {
   background-color: #ffffff;
   padding: 40px 20px;
@@ -100,7 +95,6 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-/* Contact Section */
 .contact {
   background-color: #e0f0d9;
   padding: 40px 20px;
@@ -131,7 +125,6 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-/* Letter Section */
 .letter {
   background-color: #e0f0d9;
   padding: 40px 20px;
@@ -148,18 +141,17 @@ nav a:hover {
 }
 
 .letter img {
-  width: 100%;  /* Full width of the container */
-  max-width: 600px;  /* Maximum width to keep it reasonable */
-  height: auto;  /* Maintain aspect ratio */
-  object-fit: contain;  /* Prevent image distortion */
-  border: 2px solid #d1e8c3;  /* Light green border */
+  width: 100%;  
+  max-width: 600px;  
+  height: auto;  
+  object-fit: contain;  
+  border: 2px solid #d1e8c3;  
   border-radius: 10px;
 }
 
-/* Style the download link to look like a button */
 .download-link {
   display: inline-block;
-  background-color: #3d5a47;  /* Dark green */
+  background-color: #3d5a47;  
   color: white;
   padding: 12px 25px;
   font-size: 1.2em;
@@ -170,25 +162,21 @@ nav a:hover {
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
-/* Hover effect for the link */
 .download-link:hover {
-  background-color: #4a8a53;  /* Slightly brighter green */
-  transform: scale(1.05);  /* Slightly increase the size */
+  background-color: #4a8a53;  
+  transform: scale(1.05);  
 }
 
-/* Active state for the link */
 .download-link:active {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Focus state for accessibility */
 .download-link:focus {
   outline: 2px solid #4a8a53;
   outline-offset: 4px;
 }
 
 
-/* Responsive Design */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2em;
@@ -214,3 +202,4 @@ nav a:hover {
     height: auto;
   }
 }
+

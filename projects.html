@@ -1,102 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Projects-Haylee-Torres</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects – Haylee Torres</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="dark-theme">
+  <nav class="pixel-nav">
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <div class="nav-menu">
+      <a href="index.html" class="nav-link">
+        <span class="pixel-icon">🏠</span>Home
+      </a>
+      <a href="resume.html" class="nav-link">
+        <span class="pixel-icon">📄</span>Resume
+      </a>
+      <a href="projects.html" class="nav-link active">
+        <span class="pixel-icon">💻</span>Projects
+      </a>
+      <a href="skills.html" class="nav-link">
+        <span class="pixel-icon">⭐</span>Recommendations
+      </a>
+    </div>
+  </nav>
+<div class="theme-toggle-container">
+  <div class="theme-toggle" aria-label="Toggle dark/light mode"></div>
+</div>
+  <header>
+    <h1 class="typewriter">Project Gallery</h1>
+  </header>
 
-    <header>
-        <div>
-            <h1>Projects</h1>
-        </div>
-    </header>
+  <main class="container">
+    <section class="pixel-panel">
+      <h2 class="pixel-title">Work Gallery</h2>
+      <p>This page highlights the projects I've worked on, showcasing my skills and experience across different areas.</p>
+    </section>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="projects.html" class="active">Projects</a>
-        <a href="skills.html">Recommendations</a>
-        
-    </nav>
-
-    <section id="projects" class="projects">
-        <div class="bio">
-            <h2>Work Gallery</h2>
-            <p>This page highlights the projects I've worked on, showcasing my skills and experience across different areas.</p>
-        </div>
-
-        <div class="bio">
-            <h2>Astrology Calendar</h2>
-            <p>This project allows users to track and view astrological events based on their zodiac sign. 
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Astrology Calendar</h3>
+        <p>This project allows users to track and view astrological events based on their zodiac sign. 
                 The application prompts users to input their zodiac sign, validates the input, 
                 and displays relevant events like Mercury Retrograde and Full Moons. The backend is built with C# to process the data, 
                 while the front end is styled using HTML and CSS. </p>
-            
-            <p>Skills Showcased:</p>
-            <p>
-                    <ul>
-                <li>C# Programming</li>
-                <li>HTML/CSS for Web Design</li>
-                <li>Data Storage</li>
-                <li>Console UI</li>
-                <li>Object-Oriented Programming</li>
-                </ul></p>
-            
-            <section id="letter" class="letter">
-                <a href="http://zodiacapp-123.azurewebsites.net" class="download-link">View Astrology Calendar Website</a>
-                <br> 
-                <a href="https://github.com/htorres38/Astrology-Calendar.git" class="download-link">Github Repository</a>
-                <p></p>
-            </section>
-
+        <div class="project-skills">
+          <span class="skill-tag">C#</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">Data Storage</span>
+          <span class="skill-tag">OOP</span>
         </div>
-<div class="bio">
-            <h2>Amarillo Climate Data Analysis</h2>
-            <p>This project explores climate trends in Amarillo, TX, by storing and analyzing weather data with MySQL. 
+        <div class="project-links">
+          <a href="http://zodiacapp-123.azurewebsites.net" class="download-link">View Website</a>
+          <a href="https://github.com/htorres38/Astrology-Calendar.git" class="download-link">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Amarillo Climate Data Analysis</h3>
+        <p>This project explores climate trends in Amarillo, TX, by storing and analyzing weather data with MySQL. 
                 I built a database to track temperature, rainfall, and air quality, then wrote SQL queries to identify trends. 
-                Finally, I used Power BI to create interactive charts that visualize weather patterns and air quality changes over time.
-
-                <p>Skills Showcased:</p>
-                <p>
-                    <ul>
-               <li>SQL Database Management</li>
-                <li>Data Analysis</li>
-                <li>Power BI Visualization</li>
-                <li>Query Optimization</li>
-                </ul></p>
-            <section id="letter" class="letter">
-                <a href="documents/AmarilloClimateAnalysisHT.pdf" class="download-link">View and Download Amarillo Climate Analysis (PDF)</a>
-                <p></p>
-            </section>
+                Finally, I used Power BI to create interactive charts that visualize weather patterns and air quality changes over time.</p>
+        <div class="project-skills">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">Data Analysis</span>
+          <span class="skill-tag">Power BI</span>
+          <span class="skill-tag">SQL</span>
         </div>
-
-            <div class="bio">
-            <h2>IT Inventory Tracker</h2>
-            <p>This project, developed in CIDM 3350: Database System Design, helps manage IT devices and software licenses. 
-                I utilized MySQL to track devices, licenses, and maintenance, improving data accuracy and reducing errors.
-
-                <p>Skills Showcased:</p>
-                <p>
-                    <ul>
-               <li> Database Design</li>
-                <li>SQL Programming</li>
-                <li>Data Management</li>
-                </ul></p>
-            <section id="letter" class="letter">
-                <a href="documents/ProjectDeliverableHT.pdf" class="download-link">View and Download Project Deliverable (PDF)</a>
-                <p></p>
-            </section>
+        <div class="project-links">
+          <a href="documents/AmarilloClimateAnalysisHT.pdf" class="download-link">View PDF</a>
         </div>
-    </section>
+      </div>
 
+      <div class="project-card">
+        <h3>IT Inventory Tracker</h3>
+        <p>This project, developed in CIDM 3350: Database System Design, helps manage IT devices and software licenses. 
+                I utilized MySQL to track devices, licenses, and maintenance, improving data accuracy and reducing errors.</p>
+        <div class="project-skills">
+          <span class="skill-tag">Database Design</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Data Management</span>
+        </div>
+        <div class="project-links">
+          <a href="documents/ProjectDeliverableHT.pdf" class="download-link">View PDF</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-

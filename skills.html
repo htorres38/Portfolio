@@ -1,33 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Letter-of-Recommendation-Haylee-Torres</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recommendations – Haylee Torres</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="dark-theme">
+  <nav class="pixel-nav">
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <div class="nav-menu">
+      <a href="index.html" class="nav-link">
+        <span class="pixel-icon">🏠</span>Home
+      </a>
+      <a href="resume.html" class="nav-link">
+        <span class="pixel-icon">📄</span>Resume
+      </a>
+      <a href="projects.html" class="nav-link">
+        <span class="pixel-icon">💻</span>Projects
+      </a>
+      <a href="skills.html" class="nav-link active">
+        <span class="pixel-icon">⭐</span>Recommendations
+      </a>
+    </div>
+  </nav>
+<div class="theme-toggle-container">
+  <div class="theme-toggle" aria-label="Toggle dark/light mode"></div>
+</div>
+  <header>
+    <h1 class="typewriter">Recommendations</h1>
+  </header>
 
-    <header>
-        <div>
-            <h1>Letter of Recommendation</h1>
-        </div>
-    </header>
+  <main class="container">
+    <section class="letter pixel-panel">
+      <h2 class="pixel-title">Letter of Recommendation</h2>
+      <div class="letter-links">
+        <a href="documents/LetterRecommendation.pdf" class="download-link">
+          View & Download Letter (PDF)
+        </a>
+      </div>
+      <img src="images/letterofrec.png" alt="Letter of Recommendation" class="letter-image">
+    </section>
 
-    
-    <section id="letter" class="letter">
-      <a href="documents/LetterRecommendation.pdf" class="download-link">View and Download Letter of Recommendation (PDF)</a>
-      <p></p>
-      <img src="images/letterofrec.png" width="350px" height="500px" alt="letter" title="Letter of Recommendation">
-  </section>
+    <section class="pixel-panel">
+      <h3 class="pixel-title">Connect with Me</h3>
+      <div class="contact-links">
+        <a href="https://github.com/htorres38" class="pixel-contact">
+          <span class="pixel-icon">🐙</span>GitHub
+        </a>
+        <a href="https://linkedin.com/in/hayleejtorres" class="pixel-contact">
+          <span class="pixel-icon">💼</span>LinkedIn
+        </a>
+      </div>
+    </section>
+  </main>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html" class="active">Recommendations</a>
-    </nav>
-
+  <script src="script.js"></script>
 </body>
 </html>

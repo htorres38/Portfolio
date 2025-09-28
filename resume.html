@@ -1,100 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Resume-Haylee-Torres</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume – Haylee Torres</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="dark-theme">
+  <nav class="pixel-nav">
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <div class="nav-menu">
+      <a href="index.html" class="nav-link">
+        <span class="pixel-icon">🏠</span>Home
+      </a>
+      <a href="resume.html" class="nav-link active">
+        <span class="pixel-icon">📄</span>Resume
+      </a>
+      <a href="projects.html" class="nav-link">
+        <span class="pixel-icon">💻</span>Projects
+      </a>
+      <a href="skills.html" class="nav-link">
+        <span class="pixel-icon">⭐</span>Recommendations
+      </a>
+    </div>
+  </nav>
+<div class="theme-toggle-container">
+  <div class="theme-toggle" aria-label="Toggle dark/light mode"></div>
+</div>
+  <header>
+    <h1 class="typewriter">My Resume</h1>
+  </header>
 
-    <header>
-        <div>
-            <h1>Resume</h1>
-        </div>
-    </header>
+  <main class="container">
+    <section class="pixel-panel">
+      <h2 class="pixel-title">Professional Summary</h2>
+      <p>Computer Information Systems Student at West Texas A&M University with experience in programming, data analysis, and software development.</p>
+    </section>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="resume.html" class="active">Resume</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Recommendations</a>
-        
-    </nav>
-
-    <section id="resume" class="resume">
-        <div class="bio">
-            <h2>Summary</h2>
-            <p>
-              Computer Information Systems Student at West Texas A&M University with experience in programming, 
-              data analysis, and software development.
-            </p>
-            <p>Skilled in <b>SQL</b>, <b>HTML/CSS</b>, and <b>C#</b>. 
-              Experienced in effective <b>communication</b> and <b>teamwork</b>, ready to contribute to innovative and impactful tech solutions.
-            </p>
-        </div>
-
-        <div class="bio">
-            <h2>Education</h2>
-            <p><b>Bachelor of Business Administration in Computer Information Systems</b>, West Texas A&M, Canyon, TX, Anticipated Fall 2025 • 3.7 GPA</p>
-            <p><b>Associate of Science in General Studies</b>, Frank Phillips College, Borger, TX, May 2023 • 3.44 GPA</p>
-        </div>
-
-        <div class="bio">
-            <h2>Work History</h2>
-            <p><b>Substitute Teacher</b> August 2023 - April 2025</p>
-            <p><b>Borger Independent School District</b> – Borger, TX</p>
-            <ul>
-                <li>Implemented lesson plans and managed classroom behavior for grades K-8, ensuring a positive learning environment.</li>
-                <li>Adapted instructional methods to meet diverse student needs and communicated effectively with staff.</li>
-            </ul>
-        </div>
-
-        <div class="bio">
-            <h2>Skills</h2>
-            <p><b>SQL:</b> Experience querying, analyzing, and summarizing large datasets.</p>
-            <p><b>Data Analytics & Visualization:</b> <b>Databricks</b> and <b>Power BI</b> for analyzing large datasets, creating dashboards, and
-producing reports to highlight trends</p>
-            <p><b>Programming and Web Development:</b> <b>HTML/CSS</b> (static websites, responsive design, page structure)
-and <b>C#</b> Fundamentals (variables, loops, functions, and OOP).</p>
-            <p><b>Microsoft Office:</b> Experienced in <b>Excel</b> (data analysis, charts), <b>Word</b> (reports), <b>PowerPoint</b> (presentations),
-and <b>Outlook</b> (email, scheduling).</p>
-
-        </div>
-
-        <div class="bio">
-            <h2>Achievements</h2>
+    <section class="pixel-panel">
+      <h2 class="pixel-title">Technical Skills</h2>
+      <div class="project-skills">
+        <span class="skill-tag">C#</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">HTML/CSS</span>
+        <span class="skill-tag">Azure Databricks</span>
+        <span class="skill-tag">Power BI</span>
+        <span class="skill-tag">Git</span>
+      </div>
+    </section>
+    <section class="pixel-panel">
+      <h2 class="pixel-title">Education</h2>
+      <p>Bachelor of Business Administration in Computer Information Systems, <strong>West Texas A&M University</strong> (Anticipated Fall 2025)
+    <br>Associate of Science in General Studies, <strong>Frank Phillips College</strong>, May 2023</p>
+    </section>
+    <section class="pixel-panel">
+      <h2 class="pixel-title">Skills</h2>
+      <p><strong>SQL:</strong> Experience querying, analyzing, and summarizing large datasets.</p>
+      <p><strong>Data Analytics & Visualization:</strong> Databricks and Power BI for analyzing large datasets, creating dashboards, and producing reports to highlight trends</p>
+      <p><strong>Programming and Web Development:</strong> HTML/CSS (static websites, responsive design, page structure) and C# Fundamentals (variables, loops, functions, and OOP).</p>
+      <p><strong>Microsoft Office:</strong> Experienced in Excel (data analysis, charts), Word (reports), PowerPoint (presentations), and Outlook (email, scheduling).</p>
+    </section>
+        <section class="pixel-panel">
+      <h2 class="pixel-title">Achievments</h2>
             <ul>
                 <li><i>President's List, WTAMU, Fall 2024</i></li>
                 <li><i>President's List, WTAMU, Fall 2023</i></li>
                 <li><i>Outstanding Accomplishment in Biology, Frank Phillips College, 2023</i></li>
                 <li><i>Phi Theta Kappa Member, January 2023</i></li>
             </ul>
-        </div>
-
-
-        <div class="bio">
-          <h2>Volunteer Experience</h2>
-          <p><b>Server</b></p>
-          <p><i>Borger Care Net Pregnancy Center Fundraiser Banquet</i></p>
-          <p><i>Fellowship Church, Borger, TX</i></p>
-          <p><i>Date: April 2023</i></p>
-          <ul>
-              <li>Assisted in distributing food and drinks during the fundraiser.</li>
-              <li>Helped with cleanup after the event.</li>
-          </ul>
+    </section>
+        <section class="pixel-panel">
+      <h2 class="pixel-title">Volunteer Experience</h2>
+          <p><b>Server</b> - <i>Borger Care Net Pregnancy Center Fundraiser Banquet</i>
+        <br>Fellowship Church, Borger, TX</i> <i>(April 2023)</i></p>
+          <p>Assisted in distributing food and drinks during the fundraiser.
+              <br>Helped with cleanup after the event.</p>
           <img src="images/community2.png" alt="Volunteer Work" title="Volunteer Work" style="width: 150px; height: auto;">
           <img src="images/community.png" alt="Volunteer Work" title="Volunteer Work" style="width: 220px; height: auto;">
           <img src="images/community3.png" alt="Volunteer Work" title="Volunteer Work" style="width: 230px; height: auto;">
           <img src="images/community4.png" alt="Volunteer Work" title="Volunteer Work" style="width: 170px; height: auto;">
+    </section>
+    <section class="pixel-panel">
+      <h3 class="pixel-title">Connect with Me</h3>
+      <div class="contact-links">
+        <a href="https://github.com/htorres38" class="pixel-contact">
+          <span class="pixel-icon">🐙</span>GitHub
+        </a>
+        <a href="https://linkedin.com/in/hayleejtorres" class="pixel-contact">
+          <span class="pixel-icon">💼</span>LinkedIn
+        </a>
+        <a href="mailto:hjade7255@outlook.com" class="pixel-contact">
+          <span class="pixel-icon">✉️</span>Email
+        </a>
       </div>
     </section>
+  </main>
 
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-

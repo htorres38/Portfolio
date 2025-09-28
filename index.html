@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio-of-Haylee Torres</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haylee Torres – Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-theme">
+  <nav class="pixel-nav">
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <div class="nav-menu">
+      <a href="index.html" class="nav-link active">
+        <span class="pixel-icon">🏠</span>Home
+      </a>
+      <a href="resume.html" class="nav-link">
+        <span class="pixel-icon">📄</span>Resume
+      </a>
+      <a href="projects.html" class="nav-link">
+        <span class="pixel-icon">💻</span>Projects
+      </a>
+      <a href="skills.html" class="nav-link">
+        <span class="pixel-icon">⭐</span>Recommendations
+      </a>
+    </div>
+  </nav>
 
-    <header>
-        <div>
-            <h1>Portfolio</h1>
-        </div>
-    </header>
+  <div class="theme-toggle-container">
+    <div class="theme-toggle" aria-label="Toggle dark/light mode"></div>
+  </div>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Recommendations</a>
-        
-    </nav>
+  <header>
+    <h1 class="typewriter">Haylee Torres</h1>
+  </header>
 
-    <section id="home" class="home">
-        <img src="images/port1.jpg" alt="port1" title="Haylee Torres">
-        <h2>Haylee Torres</h2>
-        <h3><i>"Building Bridges Byte by Byte"</i></h3>
-    </section>
-<section id="bio" class="bio">
-    <h2>Introduction</h2>
-    <p>
-        Welcome to my portfolio! This portfolio highlights my growth and achievements as I develop professionally. 
-        It offers a glimpse into my personal journey and showcases the skills I've gained along the way.
-    </p>
-</section>
-    <section id="bio" class="bio">
-        <h2>About Me</h2>
-
-        <p> I'm currently pursuing a Bachelor's degree in Computer Information Systems
-            at West Texas A&M University, with plans to graduate in Fall 2025.</p>
-
-        <p>
-            I have a strong interest in technology and enjoy finding solutions through programming. 
-            I am focused on continuously improving my skills and contributing to meaningful projects in the tech field.
-        </p>
-        <p>Outside of my studies, I enjoy working on personal coding projects. 
-            I also spend time designing animated videos, reading a variety of books, playing the saxophone, and creative writing. 
-            These hobbies help me bring a different perspective to my work and personal projects.</p>
+  <main class="container">
+    <section class="hero">
+      <div class="pixel-frame">
+        <img src="images/port1.jpg" alt="Haylee Torres" class="pixel-art">
+      </div>
+      <h2 class="subtitle flicker">Building Bridges Byte by Byte</h2>
     </section>
 
-    <section id="contact" class="contact">
-        <h3>Contact Me</h3>
-        <p>You can connect with me via Email or LinkedIn:</p>
-        <a href="mailto:hjade7255@outlook.com">
-            <img src="images/email2.png" alt="Email" title="Email">
+    <section class="pixel-panel">
+      <h2 class="pixel-title">Introduction</h2>
+      <p>Welcome to my portfolio! This portfolio highlights my growth and achievements as I develop professionally. It offers a glimpse into my personal journey and showcases the skills I've gained along the way.</p>
+    </section>
+
+    <section class="pixel-panel">
+      <h2 class="pixel-title">About Me</h2>
+      <p>I'm currently pursuing a Bachelor's degree in Computer Information Systems at West Texas A&M University, with plans to graduate in Fall 2025.</p>
+      <p>I have a strong interest in technology and enjoy finding solutions through programming. I am focused on continuously improving my skills and contributing to meaningful projects in the tech field.</p>
+      <p>Outside of my studies, I enjoy working on personal coding projects. I also spend time designing animated videos, reading a variety of books, playing the saxophone, and creative writing. These hobbies help me bring a different perspective to my work and personal projects.</p>
+    </section>
+
+    <section class="pixel-panel">
+      <h3 class="pixel-title">Contact Me</h3>
+      <div class="contact-links">
+        <a href="mailto:hjade7255@outlook.com" class="pixel-contact">
+          <span class="pixel-icon">✉️</span>Email
         </a>
-        <a href="https://www.linkedin.com/in/hayleejtorres">
-            <img src="images/linkedin3.png" alt="LinkedIn" title="LinkedIn">
+        <a href="https://www.linkedin.com/in/hayleejtorres" class="pixel-contact">
+          <span class="pixel-icon">💼</span>LinkedIn
         </a>
+      </div>
     </section>
+  </main>
 
+  <script src="script.js"></script>
 </body>
 </html>

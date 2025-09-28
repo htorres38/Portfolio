@@ -1,4 +1,3 @@
-
 :root {
   --bg-dark: #1E231F;
   --bg-darker: #151815;
@@ -515,4 +514,10 @@ header {
   .theme-toggle::before {
     font-size: 12px;
   }
+}
+  
+  .theme-toggle::before {
+    font-size: 12px;
+  }
+
 }

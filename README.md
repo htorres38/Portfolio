@@ -4,8 +4,7 @@ This repository contains a collection of projects I’ve completed while studyin
 
 🔗 Live Portfolio Website: [htorres38.github.io/Portfolio](https://htorres38.github.io/Portfolio/)  
 
-I update this portfolio as I complete new projects or make improvements to existing ones.  
-
+> **Note:** This project is still in development - improving features and exploring new technologies.
 ---
 
 ## Projects  

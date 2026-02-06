@@ -27,11 +27,11 @@ This repository contains a collection of projects I’ve completed while studyin
 
 ---
 
-## About Me  
+## About Me 
 I am working on my **BBA in Computer Information Systems** and plan to graduate in Fall 2025.
 
 ---
 
 ## Contact  
 - **Email:** hjade7255@outlook.com  
-- **LinkedIn:** [linkedin.com/in/hayleejtorres](https://www.linkedin.com/in/hayleejtorres)  
+- **LinkedIn:** [linkedin.com/in/hayleejtorres](https://www.linkedin.com/in/haylee-torres)  

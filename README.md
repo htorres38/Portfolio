@@ -34,4 +34,4 @@ I recently earned my **BBA in Computer Information Systems** and am currently pu
 
 ## Contact  
 - **Email:** hjade7255@outlook.com  
-- **LinkedIn:** [linkedin.com/in/hayleejtorres](https://www.linkedin.com/in/haylee-torres)  
+- **LinkedIn:** [linkedin.com/in/haylee-torres](https://www.linkedin.com/in/haylee-torres)  

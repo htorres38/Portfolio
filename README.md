@@ -28,7 +28,7 @@ This repository contains a collection of projects I’ve completed while studyin
 ---
 
 ## About Me 
-I am working on my **BBA in Computer Information Systems** and plan to graduate in Fall 2025.
+I recently earned my **BBA in Computer Information Systems** and am currently pursuing an **MS in Computer Information Systems & Business Analytics** at WTAMU.
 
 ---
 

@@ -2,7 +2,7 @@
 
 This repository contains a collection of projects I’ve completed while studying Computer Information Systems at West Texas A&M University. The projects include coursework and personal work that show my experience with programming, databases, and web development.  
 
-🔗 Live Portfolio Website: [htorres38.github.io/Portfolio](https://htorres38.github.io/Portfolio/)  
+🔗 Live Portfolio Website: https://haylee-torres.vercel.app
 
 > **Note:** This project is still in development - improving features and exploring new technologies.
 ---

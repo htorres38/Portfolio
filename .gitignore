@@ -4,8 +4,6 @@
 .LSOverride
 ._*
 
-# Claude Code local settings
-.claude/
 
 # Editor directories
 .vscode/

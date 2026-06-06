@@ -5,23 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume – Haylee Torres</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 </head>
 <body class="dark-theme">
+  <canvas id="particle-canvas"></canvas>
+
   <nav class="pixel-nav">
-    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <button class="nav-toggle" aria-label="Toggle navigation">MENU</button>
     <div class="nav-menu">
       <a href="index.html" class="nav-link">
-        <span class="pixel-icon">🏠</span>Home
+        <span class="pixel-icon">⚔</span>Home
       </a>
       <a href="resume.html" class="nav-link active">
-        <span class="pixel-icon">📄</span>Resume
+        <span class="pixel-icon">📜</span>Resume
       </a>
       <a href="projects.html" class="nav-link">
-        <span class="pixel-icon">💻</span>Projects
+        <span class="pixel-icon">⚡</span>Projects
       </a>
       <a href="skills.html" class="nav-link">
-        <span class="pixel-icon">⭐</span>Recommendations
+        <span class="pixel-icon">✦</span>Recommendations
       </a>
     </div>
   </nav>
@@ -35,18 +37,49 @@
   <main class="container">
     <section class="pixel-panel">
       <h2 class="pixel-title">Professional Summary</h2>
-      <p>Computer Information Systems Student at West Texas A&M University with experience in programming, data analysis, and software development.</p>
+      <p>Computer Information Systems Graduate Student at West Texas A&M University with experience in programming, data analysis, and software development.</p>
     </section>
 
     <section class="pixel-panel">
       <h2 class="pixel-title">Technical Skills</h2>
-      <div class="project-skills">
-        <span class="skill-tag">C#</span>
-        <span class="skill-tag">SQL</span>
-        <span class="skill-tag">HTML/CSS</span>
-        <span class="skill-tag">Azure Databricks</span>
-        <span class="skill-tag">Power BI</span>
-        <span class="skill-tag">Git</span>
+      <div class="skills-groups">
+        <div class="skill-group">
+          <span class="skill-group-label">Languages & Query</span>
+          <div class="project-skills">
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">HTML / CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-label">Databases & Backend</span>
+          <div class="project-skills">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">SQLite</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">Neon</span>
+            <span class="skill-tag">PowerSync</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-label">Analytics & Platforms</span>
+          <div class="project-skills">
+            <span class="skill-tag">Azure Databricks</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Streamlit</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-label">Version Control & IDEs</span>
+          <div class="project-skills">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">GitLab</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Visual Studio</span>
+            <span class="skill-tag">JetBrains</span>
+          </div>
+        </div>
       </div>
     </section>
     <section class="pixel-panel">
@@ -65,27 +98,29 @@
       <p><strong>Substitute Teacher - <i>Borger Independent School District | August 2023 - April 2025 Borger, TX</i></strong>
         <br><span style="display:inline-block; margin-bottom: 0.5em;">Managed fast-paced classroom environments while prioritizing multiple tasks, following established procedures, and maintaining consistent structure.</span>
         <br><span style="display:inline-block; margin-bottom: 0.5em;">Supported classroom technology and daily operations, including basic device troubleshooting, communication with staff, and adapting quickly to new assignments.</span>
+      </p>
     </section>
     <section class="pixel-panel">
       <h2 class="pixel-title">Skills</h2>
-      <p><strong>SQL:</strong> Experience querying, analyzing, and summarizing large datasets.</p>
-      <p><strong>Data Analytics & Visualization:</strong> Databricks and Power BI for analyzing large datasets, creating dashboards, and visualizing trends.</p>
-      <p><strong>Programming and Web Development:</strong> HTML/CSS (static websites, responsive design, page structure) and C# Fundamentals (variables, loops, functions, and OOP).</p>
-      <p><strong>Microsoft Office:</strong> Experienced in Excel (data analysis, charts), Word (reports), PowerPoint (presentations), and Outlook (email, scheduling).</p>
+      <p><strong>SQL & Databases:</strong> Querying, analyzing, and summarizing large datasets across MySQL, SQLite, and Azure Databricks. Backend database work using Supabase (including authentication) and Neon for application development.</p>
+      <p><strong>Offline & Sync Infrastructure:</strong> PowerSync for building applications with offline capabilities and real-time data synchronization.</p>
+      <p><strong>Data Analytics & Visualization:</strong> Azure Databricks and Power BI for analyzing large datasets, building dashboards, and visualizing trends. Interactive data apps built with Streamlit.</p>
+      <p><strong>Programming & Web Development:</strong> HTML/CSS (responsive design, page structure) and C# fundamentals (OOP, loops, functions). Development across VS Code, Visual Studio, and JetBrains IDEs; version control via Git, GitHub, and GitLab.</p>
+      <p><strong>Microsoft Office:</strong> Excel (data analysis, charts), Word, PowerPoint, and Outlook.</p>
     </section>
         <section class="pixel-panel">
-      <h2 class="pixel-title">Achievments</h2>
+      <h2 class="pixel-title">Achievements</h2>
       <div class="achievement-list">
-        <span class="achievement-item"><i>President's List, WTAMU, Fall 2024</i></span>
-        <br><span class="achievement-item"><i>President's List, WTAMU, Fall 2023</i></span>
-        <br><span class="achievement-item"><i>Outstanding Accomplishment in Biology, Frank Phillips College, 2023</i></span>
-        <br><span class="achievement-item"><i>Phi Theta Kappa Member, January 2023</i></span>
+        <span class="achievement-item">President's List, WTAMU, Fall 2024</span>
+        <span class="achievement-item">President's List, WTAMU, Fall 2023</span>
+        <span class="achievement-item">Outstanding Accomplishment in Biology, Frank Phillips College, 2023</span>
+        <span class="achievement-item">Phi Theta Kappa Member, January 2023</span>
       </div>
     </section>
         <section class="pixel-panel">
       <h2 class="pixel-title">Volunteer Experience</h2>
           <p><b>Server</b> - <i>Borger Care Net Pregnancy Center Fundraiser Banquet</i>
-        <br>Fellowship Church, Borger, TX</i> <i>(April 2023)</i></p>
+        <br>Fellowship Church, Borger, TX &nbsp;·&nbsp; <i>April 2023</i></p>
           <p>Supported a high-attendance community fundraiser by assisting with event flow, coordinating with team members, and helping maintain an organized and welcoming environment.</p>
           <div class="community-gallery">
             <div class="pixel-frame"><img src="images/community2.png" alt="Volunteer Work" class="community-img"></div>
@@ -97,18 +132,22 @@
     <section class="pixel-panel">
       <h3 class="pixel-title">Connect with Me</h3>
       <div class="contact-links">
-          <a href="https://github.com/htorres38" class="pixel-contact">
-          <span class="pixel-icon">🐙</span>GitHub
+        <a href="https://github.com/htorres38" class="pixel-contact">
+          <span class="pixel-icon">⚙</span>GitHub
         </a>
         <a href="mailto:hjade7255@outlook.com" class="pixel-contact">
-          <span class="pixel-icon">✉️</span>Email
+          <span class="pixel-icon">✉</span>Email
         </a>
         <a href="https://www.linkedin.com/in/haylee-torres" class="pixel-contact">
-          <span class="pixel-icon">💼</span>LinkedIn
+          <span class="pixel-icon">⬡</span>LinkedIn
         </a>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <p>Haylee Torres &nbsp;·&nbsp; Portfolio &nbsp;·&nbsp; 2026</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

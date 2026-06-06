@@ -1,37 +1,52 @@
-# Haylee Torres – Portfolio  
+# Haylee Torres – Portfolio
 
-This repository contains a collection of projects I’ve completed while studying Computer Information Systems at West Texas A&M University. The projects include coursework and personal work that show my experience with programming, databases, and web development.  
+Personal portfolio showcasing my projects, resume, and recommendations as a graduate student in Computer Information Systems and Business Analytics at West Texas A&M University.
 
-🔗 Live Portfolio Website: [htorres38.github.io](https://htorres38.github.io/Portfolio/index.html)
-
-> **Note:** This project is still in development - improving features and exploring new technologies.
----
-
-## Projects  
-
-### Portfolio Website  
-- A personal website I built from scratch with HTML and CSS. It includes my projects, resume, and recommendations.  
-- **Technologies:** HTML, CSS  
-
-### IT Inventory Tracker  
-- A database project built in my Database Systems Design course. It tracks IT devices, software licenses, and maintenance schedules. The goal was to improve data accuracy and reduce errors.  
-- **Technologies:** MySQL, Database Design, SQL Programming  
-
-### Astrology Calendar  
-- A C# program where the user enters their zodiac sign and gets information about upcoming astrological events. It has input validation and a simple interface.  
-- **Technologies:** C#, HTML/CSS, Razor Pages, VS Code 
-
-### Amarillo Climate Data Analysis  
-- A project that stores and analyzes Amarillo, TX climate data such as temperature, rainfall, and air quality. I used Power BI to create visualizations.  
-- **Technologies:** MySQL, SQL Queries, Power BI  
+**Live Site:** [htorres38.github.io/Portfolio](https://htorres38.github.io/Portfolio/index.html)
 
 ---
 
-## About Me 
-I recently earned my **BBA in Computer Information Systems** and am currently pursuing an **MS in Computer Information Systems & Business Analytics** at WTAMU.
+## Projects
+
+### Astrology Calendar
+A C# web application where users input their zodiac sign to view upcoming astrological events. Features input validation and a front-end built with HTML/CSS.  
+**Technologies:** C#, HTML/CSS, Razor Pages
+
+### Amarillo Climate Data Analysis
+Stores and analyzes Amarillo, TX climate data — temperature, rainfall, and air quality — using MySQL and Power BI for visualization.  
+**Technologies:** MySQL, SQL, Power BI
+
+### Fuel Tracker Dashboard (SQL)
+Power BI dashboard analyzing gasoline prices across Houston, Texas, and the U.S. (2020–2025). Features MoM, YoY, and spread metrics to highlight key trends and seasonal patterns.  
+**Technologies:** MySQL, SQL, Power BI
+
+### Fuel Tracker Dashboard (Python)
+Interactive Streamlit dashboard analyzing the same fuel price data — rebuilt from the SQL version to explore a different approach to data visualization.  
+**Technologies:** Python, Streamlit
+
+### IT Inventory Tracker
+Database project tracking IT devices, software licenses, and maintenance schedules. Built to improve data accuracy and reduce management errors.  
+**Technologies:** MySQL, SQL, Database Design
 
 ---
 
-## Contact  
-- **Email:** hjade7255@outlook.com  
-- **LinkedIn:** [linkedin.com/in/haylee-torres](https://www.linkedin.com/in/haylee-torres)  
+## Tech Stack
+
+**Languages & Query:** SQL, C#, HTML/CSS  
+**Databases & Backend:** MySQL, SQLite, Supabase, Neon, PowerSync  
+**Analytics & Platforms:** Azure Databricks, Power BI, Streamlit  
+**Version Control & IDEs:** Git, GitHub, GitLab, VS Code, Visual Studio, JetBrains
+
+---
+
+## About
+
+Graduate student in Computer Information Systems and Business Analytics at WTAMU. BBA in Computer Information Systems, December 2025.
+
+---
+
+## Contact
+
+- **Email:** hjade7255@outlook.com
+- **LinkedIn:** [linkedin.com/in/haylee-torres](https://www.linkedin.com/in/haylee-torres)
+- **GitHub:** [github.com/htorres38](https://github.com/htorres38)

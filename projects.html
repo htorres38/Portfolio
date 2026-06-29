@@ -82,6 +82,28 @@
       </div>
 
       <div class="project-card">
+        <h3>Home Network Monitoring Dashboard</h3>
+        <p>Built a Python tool that discovers active devices on a network with a parallel ping-sweep, then identifies each one by
+MAC address (via the ARP table) so it stays tracked even when its IP changes through DHCP.</p>
+<p>Added reverse-DNS hostname lookups and new-device detection to label and track devices, and logged uptime and
+latency to SQLite on a 30-second schedule with threshold-based alerts for outages and high latency.</p>
+<p>Used Nmap to map MAC OUI prefixes to device vendors and to scan discovered hosts for open ports and running
+services.</p>
+<p>Built a Streamlit dashboard showing device status, latency-over-time charts, and alerts, including a privacy mode that
+masks MAC and IP details for safe public sharing.</p>
+        <div class="project-skills">
+          <span class="skill-tag">Nmap</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">SQLite</span>
+          <span class="skill-tag">Streamlit</span>
+        </div>
+        <div class="project-links">
+          <a href="network-overview.html" class="download-link">Project Overview</a>
+          <a href="" class="download-link">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
         <h3>Fuel Tracker Dashboard Python</h3>
         <p>Developed an interactive dashboard in Python using Streamlit to analyze monthly gasoline prices across Houston,
      Texas, and the U.S. (2020–2025). The app visualizes MoM, YoY, and spread metrics to reveal key trends and
@@ -97,6 +119,7 @@
         </div>
       </div>
     </div>
+
         <section class="pixel-panel">
       <h3 class="pixel-title">Connect with Me</h3>
       <div class="contact-links">

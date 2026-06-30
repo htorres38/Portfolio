@@ -7,75 +7,26 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
   <style>
-    .ipam-section {
+    .net-section {
       margin-bottom: 28px;
     }
 
-    /* pixel-panel p is 1.25em which is too large for technical descriptions */
-    .pixel-panel .query-explanation {
-      font-size: 0.88em;
+    .pixel-panel .section-desc {
+      font-size: 1.00em;
       color: var(--text-secondary);
       margin-bottom: 14px;
       padding: 6px 14px;
       border-left: 2px solid var(--gold-dim);
+      line-height: 1.65;
     }
 
-    .query-explanation code {
+    .section-desc code {
       font-family: 'Courier New', monospace;
-      font-size: 0.92em;
+      font-size: 1.06em;
       color: var(--gold-bright);
       background: var(--stone-dark);
       padding: 1px 5px;
       border: 1px solid var(--border);
-    }
-
-    .code-block {
-      background: var(--stone-dark);
-      border: 1px solid var(--border);
-      border-left: 3px solid var(--gold-dim);
-      padding: 16px 20px;
-      overflow-x: auto;
-      margin-bottom: 18px;
-      border-radius: 1px;
-    }
-
-    .code-block code {
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 0.8em;
-      color: var(--text-primary);
-      line-height: 1.55;
-      white-space: pre;
-    }
-
-    .code-block-scroll {
-      max-height: 240px;
-      overflow-y: auto;
-    }
-
-    .light-theme .code-block {
-      background: var(--stone-mid);
-      border-color: var(--border-gold);
-    }
-
-    .query-screenshot {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      border: 1px solid var(--border-gold);
-      box-shadow: var(--shadow-deep), 0 0 18px rgba(201,162,39,0.08);
-      border-radius: 1px;
-      transition: all 0.4s ease;
-    }
-
-    .query-screenshot:hover {
-      border-color: var(--gold);
-      box-shadow: var(--shadow-deep), var(--glow-gold);
-      transform: scale(1.01);
-    }
-
-    .screenshot-wrap {
-      margin-top: 4px;
-      overflow-x: auto;
     }
 
     .back-link {
@@ -83,7 +34,7 @@
       align-items: center;
       gap: 8px;
       font-family: 'Cinzel', serif;
-      font-size: 0.78em;
+      font-size: 0.89em;
       font-weight: 600;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -106,15 +57,7 @@
       transform: translateY(-2px);
     }
 
-    .project-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 9px;
-      margin-top: 16px;
-    }
-
-    /* Network diagram */
-    .network-diagram {
+    .arch-diagram {
       border: 1px solid var(--border-gold);
       background: var(--bg-card);
       padding: 12px;
@@ -122,35 +65,76 @@
       overflow-x: auto;
     }
 
-    /* Addressing table */
-    .ipam-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 4px 0 0;
-      font-size: 0.8em;
+    .bug-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
-    .ipam-table th {
+
+    .bug-entry {
+      border-left: 3px solid var(--gold-dim);
+      padding: 10px 16px;
+      background: var(--stone-dark);
+    }
+
+    .bug-entry h3 {
       font-family: 'Cinzel', serif;
-      font-size: 0.74em;
+      font-size: 0.94em;
+      font-weight: 600;
       letter-spacing: 1.5px;
       text-transform: uppercase;
       color: var(--gold);
-      font-weight: 600;
-      padding: 8px 12px;
-      border-bottom: 1px solid var(--border-gold);
-      text-align: left;
+      margin: 0 0 8px;
     }
-    .ipam-table td {
-      padding: 7px 12px;
-      border-bottom: 1px solid var(--border);
+
+    .bug-entry p {
+      font-size: 1.00em;
       color: var(--text-secondary);
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    .bug-entry code {
       font-family: 'Courier New', monospace;
-      font-size: 0.95em;
+      font-size: 1.06em;
+      color: var(--gold-bright);
+      background: var(--bg-card);
+      padding: 1px 5px;
+      border: 1px solid var(--border);
     }
-    .ipam-table tbody tr:hover td {
-      background: var(--gold-subtle);
-      color: var(--text-primary);
+
+    .light-theme .bug-entry {
+      background: var(--stone-mid);
     }
+
+    .light-theme .bug-entry code {
+      background: var(--stone-dark);
+    }
+
+    .stack-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .stack-pill {
+      font-family: 'Cinzel', serif;
+      font-size: 0.85em;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--border-gold);
+      background: var(--stone-dark);
+      padding: 7px 16px;
+      border-radius: 1px;
+    }
+
+    .light-theme .stack-pill {
+      background: var(--stone-mid);
+    }
+
   </style>
 </head>
 <body class="dark-theme">
@@ -179,13 +163,187 @@
   </div>
 
   <header>
-    <h1 class="typewriter">Home Network Monitoring Dashboard</h1>
-        <p>This page is currently under construction :P </p>
+    <h1 class="typewriter">Network Monitor Dashboard</h1>
   </header>
 
   <main class="container">
 
     <a href="projects.html" class="back-link">← Back to Projects</a>
+
+    <section class="pixel-panel hidden-panel net-section">
+      <h2 class="pixel-title">What This Is</h2>
+      <p class="section-desc">
+        A network monitoring system built in Python that runs in the background, pings every device on your home network,
+        and shows everything on a live dashboard. It tracks which devices are online, how fast they are responding,
+        what ports they have open, and alerts you when something goes down or gets slow.
+      </p>
+      <a href="https://network-monitor-dashboard.streamlit.app" class="download-link">View Dashboard</a>
+      <a href="https://github.com/htorres38/Network-Monitor.git" class="download-link">View Code</a>
+    </section>
+
+    <section class="pixel-panel hidden-panel net-section">
+      <h2 class="pixel-title">Why I Built It</h2>
+      <p class="section-desc">
+        Most home networks have no monitoring at all. You find out something is broken when someone tries to use it
+        and it does not work. I wanted something that would catch problems on its own without needing to check manually.
+      </p>
+      <p class="section-desc">
+        There is also a difference between a device being completely offline versus just getting slow. A device that starts
+        responding slower and slower is usually a sign something is wrong before it fully goes down. Just knowing up or
+        down is not enough — you need the latency over time too.
+      </p>
+      <p class="section-desc">
+        On top of that I realized I did not actually know everything that was on my network or what ports those devices
+        had open. Some of that is a security concern you would not notice otherwise, like a device running Telnet or
+        having SMB exposed.
+      </p>
+    </section>
+
+    <section class="pixel-panel hidden-panel net-section">
+      <h2 class="pixel-title">How It Works</h2>
+      <p class="section-desc">There are two separate pieces that run independently — a background collector and a read-only dashboard.</p>
+
+      <div class="arch-diagram">
+        <svg width="100%" viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="8" width="680" height="284" rx="3" fill="#1D190D" stroke="#7A6228" stroke-width="1"/>
+          <text x="350" y="36" text-anchor="middle" fill="#C9A227" font-family="Georgia, serif" font-size="13" font-weight="700" letter-spacing="2">SYSTEM ARCHITECTURE</text>
+          <text x="350" y="54" text-anchor="middle" fill="#8A7655" font-family="Georgia, serif" font-size="11.5">Two decoupled processes sharing a Neon PostgreSQL database</text>
+
+          <rect x="30" y="70" width="210" height="190" rx="2" fill="#2E2618" stroke="#C9A227" stroke-width="1"/>
+          <text x="135" y="97" text-anchor="middle" fill="#E8D5A3" font-family="Georgia, serif" font-size="13" font-weight="700">Collector</text>
+          <text x="135" y="113" text-anchor="middle" fill="#8A7655" font-family="Georgia, serif" font-size="10" font-style="italic">runs in the background</text>
+
+          <text x="48" y="136" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">· Pings subnet every 30s</text>
+          <text x="48" y="154" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">· ARP table → MAC address</text>
+          <text x="48" y="172" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">· Reverse DNS → hostname</text>
+          <text x="48" y="190" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">· MAC prefix → vendor</text>
+          <text x="48" y="208" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">· nmap port scan (10 min)</text>
+          <text x="48" y="226" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">· Writes results to DB</text>
+
+          <rect x="270" y="100" width="160" height="130" rx="2" fill="#2E2618" stroke="#C9A227" stroke-width="1.5"/>
+          <text x="350" y="128" text-anchor="middle" fill="#E8D5A3" font-family="Georgia, serif" font-size="13" font-weight="700">Neon PostgreSQL</text>
+          <text x="350" y="150" text-anchor="middle" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">hosts</text>
+          <text x="350" y="168" text-anchor="middle" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">ping_history</text>
+          <text x="350" y="186" text-anchor="middle" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">open_ports</text>
+          <text x="350" y="204" text-anchor="middle" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">alerts</text>
+
+          <rect x="460" y="70" width="210" height="190" rx="2" fill="#2E2618" stroke="#C9A227" stroke-width="1"/>
+          <text x="565" y="97" text-anchor="middle" fill="#E8D5A3" font-family="Georgia, serif" font-size="13" font-weight="700">Dashboard</text>
+          <text x="565" y="113" text-anchor="middle" fill="#8A7655" font-family="Georgia, serif" font-size="10" font-style="italic">reads only — no network calls</text>
+
+          <text x="478" y="136" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">· Device status table</text>
+          <text x="478" y="154" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">· Latency chart (24h)</text>
+          <text x="478" y="172" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">· Availability heatmap</text>
+          <text x="478" y="190" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">· Open ports per device</text>
+          <text x="478" y="208" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">· Downtime / slow alerts</text>
+          <text x="478" y="226" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">· Public mode toggle</text>
+
+
+          <line x1="240" y1="165" x2="268" y2="165" stroke="#C9A227" stroke-width="1.5" marker-end="url(#arrow)"/>
+          <line x1="430" y1="165" x2="458" y2="165" stroke="#C9A227" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+          <defs>
+            <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L0,6 L8,3 z" fill="#C9A227"/>
+            </marker>
+          </defs>
+
+          <text x="350" y="280" text-anchor="middle" fill="#8A7655" font-family="Georgia, serif" font-size="11" font-style="italic">Restarting the dashboard never loses collected data</text>
+        </svg>
+      </div>
+    </section>
+
+    <section class="pixel-panel hidden-panel net-section">
+      <h2 class="pixel-title">Problems I Ran Into & their Solutions</h2>
+      <p class="section-desc">Four real bugs that came up during development, and how each one got fixed.</p>
+
+      <div class="bug-list">
+        <div class="bug-entry">
+          <h3>The ARP table was hanging on macOS</h3>
+          <p>
+            The first version used <code>arp -a</code> to get MAC addresses. On macOS that command tries to do a DNS
+            lookup on every single entry before it returns anything, so it would sit there for several seconds and
+            sometimes come back with incomplete results. Switching to <code>arp -an</code> tells it to skip DNS and
+            just return the raw table. That fixed it immediately.
+          </p>
+        </div>
+
+        <div class="bug-entry">
+          <h3>IP addresses were showing up where MAC addresses should be</h3>
+          <p>
+            Some devices respond to a ping but are not in the ARP table yet. This happens with devices that clear their
+            ARP entries quickly. When that happens there is no MAC to store, so the monitor falls back to using the IP
+            address as the device identifier and stores it in the MAC column. That caused IP addresses to show up in the
+            MAC column on the dashboard. Every place in the code that reads that column had to be updated to detect
+            whether the value is actually a MAC or an IP and handle it differently.
+          </p>
+        </div>
+
+        <div class="bug-entry">
+          <h3>Device names were leaking through in public mode</h3>
+          <p>
+            The dashboard has a public mode that hides personal info like full IP addresses and MAC addresses. That
+            worked fine on the device table but the latency chart and the availability heatmap were reading labels
+            straight from the raw database. So if a device was labeled something like "Mac mini" in the config, that
+            name would still show up on the chart even with public mode turned on. The fix was to swap all labels out
+            for generic vendor categories like "Apple device" or "Router" before the chart data even gets built, instead
+            of trying to find and remove sensitive patterns after the fact.
+          </p>
+        </div>
+
+        <div class="bug-entry">
+          <h3>Technical Debt: Data Migration for Public View</h3>
+          <p>
+            The project originally ran on a local SQLite database. That worked fine for personal use, but once I wanted
+            to host the dashboard publicly on Streamlit, the database itself would have had to be published alongside
+            the code — which meant exposing all the collected device data, not just hiding it with public mode. Because
+            the original choice didn't account for public hosting, fixing it wasn't a quick patch — it meant migrating
+            the database to Neon (hosted PostgreSQL) and rewriting every piece of code that read or wrote to SQLite. The
+            collector now writes directly to Neon instead of a local file, and the Streamlit deployment connects to it
+            using a Neon passkey connection string stored in the app's advanced settings, so the actual data never has
+            to live in the repo.
+          </p>
+        </div>
+
+        <div class="bug-entry">
+          <h3>The chart got slow after a few days of data</h3>
+          <p>
+            The latency chart was loading the entire ping history from the database on every page refresh. After a few
+            days of logging that started taking noticeably long. The fix was a separate database query that only pulls
+            the last 24 hours for the chart, while the full history still gets loaded separately for uptime percentages
+            and alerts where you need all the data.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pixel-panel hidden-panel net-section">
+      <h2 class="pixel-title">Stack</h2>
+      <p class="section-desc">Technologies used to build and deploy this project.</p>
+      <div class="stack-pills">
+        <span class="stack-pill">Python</span>
+        <span class="stack-pill">Streamlit</span>
+        <span class="stack-pill">Plotly</span>
+        <span class="stack-pill">nmap</span>
+        <span class="stack-pill">Neon</span>
+        <span class="stack-pill">PostgreSQL</span>
+      </div>
+    </section>
+
+    <section class="pixel-panel hidden-panel">
+      <h3 class="pixel-title">Connect with Me</h3>
+      <div class="contact-links">
+        <a href="https://github.com/htorres38" class="pixel-contact">
+          <span class="pixel-icon">⚙</span>GitHub
+        </a>
+        <a href="mailto:hjade7255@outlook.com" class="pixel-contact">
+          <span class="pixel-icon">✉</span>Email
+        </a>
+        <a href="https://www.linkedin.com/in/haylee-torres" class="pixel-contact">
+          <span class="pixel-icon">⬡</span>LinkedIn
+        </a>
+      </div>
+    </section>
 
   </main>
 

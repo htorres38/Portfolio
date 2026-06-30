@@ -8,34 +8,30 @@ Personal portfolio showcasing my projects, resume, and recommendations as a grad
 
 ## Projects
 
-### Astrology Calendar
-A C# web application where users input their zodiac sign to view upcoming astrological events. Features input validation and a front-end built with HTML/CSS.  
-**Technologies:** C#, HTML/CSS, Razor Pages
+### Prep Net
+CCNA study app with cloud progress tracking and a built-in AI tutor.  
+**Technologies:** TypeScript, Tailwind CSS, Neon (PostgreSQL), Supabase Auth, Google Gemini, PowerSync
 
-### Amarillo Climate Data Analysis
-Stores and analyzes Amarillo, TX climate data — temperature, rainfall, and air quality — using MySQL and Power BI for visualization.  
-**Technologies:** MySQL, SQL, Power BI
+### IP Address Management (IPAM) System
+Network subnet design paired with a database to track VLANs and IP assignments.  
+**Technologies:** Network Design, Subnetting, SQLite, VLSM
 
-### Fuel Tracker Dashboard (SQL)
-Power BI dashboard analyzing gasoline prices across Houston, Texas, and the U.S. (2020–2025). Features MoM, YoY, and spread metrics to highlight key trends and seasonal patterns.  
-**Technologies:** MySQL, SQL, Power BI
+### Home Network Monitoring Dashboard
+Python tool that pings, tracks, and scans home network devices, with a live Streamlit dashboard.  
+**Technologies:** Python, Nmap, Neon (PostgreSQL), Streamlit
 
 ### Fuel Tracker Dashboard (Python)
-Interactive Streamlit dashboard analyzing the same fuel price data — rebuilt from the SQL version to explore a different approach to data visualization.  
-**Technologies:** Python, Streamlit
-
-### IT Inventory Tracker
-Database project tracking IT devices, software licenses, and maintenance schedules. Built to improve data accuracy and reduce management errors.  
-**Technologies:** MySQL, SQL, Database Design
+Streamlit dashboard visualizing gasoline price trends across Houston, Texas, and the U.S.  
+**Technologies:** Python, Streamlit, Data Visualization
 
 ---
 
 ## Tech Stack
 
-**Languages & Query:** SQL, C#, HTML/CSS  
-**Databases & Backend:** MySQL, SQLite, Supabase, Neon, PowerSync  
-**Analytics & Platforms:** Azure Databricks, Power BI, Streamlit  
-**Version Control & IDEs:** Git, GitHub, GitLab, VS Code, Visual Studio, JetBrains
+**Languages & Query:** SQL, TypeScript, HTML/CSS, Python  
+**Databases & Backend:** Neon (PostgreSQL), SQLite, Supabase, PowerSync  
+**Analytics & Platforms:** Streamlit
+**Version Control & IDEs:** Git, GitHub, VS Code, JetBrains
 
 ---
 

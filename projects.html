@@ -83,23 +83,20 @@
 
       <div class="project-card">
         <h3>Home Network Monitoring Dashboard</h3>
-        <p>Built a Python tool that discovers active devices on a network with a parallel ping-sweep, then identifies each one by
-MAC address (via the ARP table) so it stays tracked even when its IP changes through DHCP.</p>
-<p>Added reverse-DNS hostname lookups and new-device detection to label and track devices, and logged uptime and
-latency to SQLite on a 30-second schedule with threshold-based alerts for outages and high latency.</p>
-<p>Used Nmap to map MAC OUI prefixes to device vendors and to scan discovered hosts for open ports and running
-services.</p>
-<p>Built a Streamlit dashboard showing device status, latency-over-time charts, and alerts, including a privacy mode that
-masks MAC and IP details for safe public sharing.</p>
+        <p>Built a Python tool that discovers devices on a network with a ping-sweep, tracks them by MAC address through
+     the ARP table so they stay identified even as DHCP changes their IP, and logs uptime and latency to a Neon
+     PostgreSQL database with threshold-based alerts for outages and slowdowns. Used Nmap to identify device vendors
+     and scan for open ports, then built a Streamlit dashboard with live status, latency charts, and a privacy mode
+     for public sharing.</p>
         <div class="project-skills">
           <span class="skill-tag">Nmap</span>
           <span class="skill-tag">Python</span>
-          <span class="skill-tag">SQLite</span>
+          <span class="skill-tag">PostgreSQL</span>
           <span class="skill-tag">Streamlit</span>
         </div>
         <div class="project-links">
           <a href="network-overview.html" class="download-link">Project Overview</a>
-          <a href="" class="download-link">GitHub</a>
+          <a href="https://github.com/htorres38/Network-Monitor.git" class="download-link">GitHub</a>
         </div>
       </div>
 

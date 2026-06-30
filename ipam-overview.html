@@ -28,6 +28,8 @@
       border: 1px solid var(--border);
     }
 
+    .light-theme .query-explanation code { color: var(--gold); }
+
     .code-block {
       background: var(--stone-dark);
       border: 1px solid var(--border);
@@ -189,35 +191,35 @@
 
       <div class="network-diagram">
         <svg width="100%" viewBox="0 0 680 270" xmlns="http://www.w3.org/2000/svg">
-          <rect x="10" y="8" width="660" height="252" rx="3" fill="#1D190D" stroke="#7A6228" stroke-width="1"/>
-          <text x="34" y="36" fill="#C9A227" font-family="Georgia, serif" font-size="13" font-weight="700" letter-spacing="2">SITE NETWORK — 10.50.0.0/16</text>
-          <text x="34" y="54" fill="#8A7655" font-family="Georgia, serif" font-size="11.5">Segmented into 6 VLAN subnets · variable-length subnet masking</text>
+          <rect x="10" y="8" width="660" height="252" rx="3" fill="var(--bg-card)" stroke="var(--border-gold)" stroke-width="1"/>
+          <text x="34" y="36" fill="var(--gold)" font-family="Georgia, serif" font-size="13" font-weight="700" letter-spacing="2">SITE NETWORK — 10.50.0.0/16</text>
+          <text x="34" y="54" fill="var(--text-dim)" font-family="Georgia, serif" font-size="11.5">Segmented into 6 VLAN subnets · variable-length subnet masking</text>
 
-          <rect x="28"  y="68" width="190" height="72" rx="2" fill="#2E2618" stroke="#C9A227" stroke-width="1"/>
-          <text x="123" y="96"  text-anchor="middle" fill="#E8D5A3" font-family="Georgia, serif" font-size="12.5" font-weight="600">Field / SCADA (V20)</text>
-          <text x="123" y="116" text-anchor="middle" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">10.50.0.0/24 · 254 hosts</text>
+          <rect x="28"  y="68" width="190" height="72" rx="2" fill="var(--stone-mid)" stroke="var(--gold)" stroke-width="1"/>
+          <text x="123" y="96"  text-anchor="middle" fill="var(--text-primary)" font-family="Georgia, serif" font-size="12.5" font-weight="600">Field / SCADA (V20)</text>
+          <text x="123" y="116" text-anchor="middle" fill="var(--text-secondary)" font-family="Courier New, monospace" font-size="10">10.50.0.0/24 · 254 hosts</text>
 
-          <rect x="244" y="68" width="192" height="72" rx="2" fill="#2E2618" stroke="#C9A227" stroke-width="1"/>
-          <text x="340" y="96"  text-anchor="middle" fill="#E8D5A3" font-family="Georgia, serif" font-size="12.5" font-weight="600">Operations (V10)</text>
-          <text x="340" y="116" text-anchor="middle" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">10.50.1.0/25 · 126 hosts</text>
+          <rect x="244" y="68" width="192" height="72" rx="2" fill="var(--stone-mid)" stroke="var(--gold)" stroke-width="1"/>
+          <text x="340" y="96"  text-anchor="middle" fill="var(--text-primary)" font-family="Georgia, serif" font-size="12.5" font-weight="600">Operations (V10)</text>
+          <text x="340" y="116" text-anchor="middle" fill="var(--text-secondary)" font-family="Courier New, monospace" font-size="10">10.50.1.0/25 · 126 hosts</text>
 
-          <rect x="462" y="68" width="190" height="72" rx="2" fill="#2E2618" stroke="#C9A227" stroke-width="1"/>
-          <text x="557" y="96"  text-anchor="middle" fill="#E8D5A3" font-family="Georgia, serif" font-size="12.5" font-weight="600">Engineering (V30)</text>
-          <text x="557" y="116" text-anchor="middle" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">10.50.1.128/26 · 62 hosts</text>
+          <rect x="462" y="68" width="190" height="72" rx="2" fill="var(--stone-mid)" stroke="var(--gold)" stroke-width="1"/>
+          <text x="557" y="96"  text-anchor="middle" fill="var(--text-primary)" font-family="Georgia, serif" font-size="12.5" font-weight="600">Engineering (V30)</text>
+          <text x="557" y="116" text-anchor="middle" fill="var(--text-secondary)" font-family="Courier New, monospace" font-size="10">10.50.1.128/26 · 62 hosts</text>
 
-          <rect x="28"  y="154" width="190" height="72" rx="2" fill="#2E2618" stroke="#C9A227" stroke-width="1"/>
-          <text x="123" y="182" text-anchor="middle" fill="#E8D5A3" font-family="Georgia, serif" font-size="12.5" font-weight="600">Guest Wi-Fi (V60)</text>
-          <text x="123" y="202" text-anchor="middle" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">10.50.1.192/26 · 62 hosts</text>
+          <rect x="28"  y="154" width="190" height="72" rx="2" fill="var(--stone-mid)" stroke="var(--gold)" stroke-width="1"/>
+          <text x="123" y="182" text-anchor="middle" fill="var(--text-primary)" font-family="Georgia, serif" font-size="12.5" font-weight="600">Guest Wi-Fi (V60)</text>
+          <text x="123" y="202" text-anchor="middle" fill="var(--text-secondary)" font-family="Courier New, monospace" font-size="10">10.50.1.192/26 · 62 hosts</text>
 
-          <rect x="244" y="154" width="192" height="72" rx="2" fill="#2E2618" stroke="#C9A227" stroke-width="1"/>
-          <text x="340" y="182" text-anchor="middle" fill="#E8D5A3" font-family="Georgia, serif" font-size="12.5" font-weight="600">IT / Admin (V40)</text>
-          <text x="340" y="202" text-anchor="middle" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">10.50.2.0/27 · 30 hosts</text>
+          <rect x="244" y="154" width="192" height="72" rx="2" fill="var(--stone-mid)" stroke="var(--gold)" stroke-width="1"/>
+          <text x="340" y="182" text-anchor="middle" fill="var(--text-primary)" font-family="Georgia, serif" font-size="12.5" font-weight="600">IT / Admin (V40)</text>
+          <text x="340" y="202" text-anchor="middle" fill="var(--text-secondary)" font-family="Courier New, monospace" font-size="10">10.50.2.0/27 · 30 hosts</text>
 
-          <rect x="462" y="154" width="190" height="72" rx="2" fill="#2E2618" stroke="#C9A227" stroke-width="1"/>
-          <text x="557" y="182" text-anchor="middle" fill="#E8D5A3" font-family="Georgia, serif" font-size="12.5" font-weight="600">Management (V50)</text>
-          <text x="557" y="202" text-anchor="middle" fill="#C4A96E" font-family="Courier New, monospace" font-size="10">10.50.2.32/28 · 14 hosts</text>
+          <rect x="462" y="154" width="190" height="72" rx="2" fill="var(--stone-mid)" stroke="var(--gold)" stroke-width="1"/>
+          <text x="557" y="182" text-anchor="middle" fill="var(--text-primary)" font-family="Georgia, serif" font-size="12.5" font-weight="600">Management (V50)</text>
+          <text x="557" y="202" text-anchor="middle" fill="var(--text-secondary)" font-family="Courier New, monospace" font-size="10">10.50.2.32/28 · 14 hosts</text>
 
-          <text x="340" y="246" text-anchor="middle" fill="#8A7655" font-family="Georgia, serif" font-size="11" font-style="italic">Each VLAN is isolated on its own subnet, sized to fit its hosts with room to grow</text>
+          <text x="340" y="246" text-anchor="middle" fill="var(--text-dim)" font-family="Georgia, serif" font-size="11" font-style="italic">Each VLAN is isolated on its own subnet, sized to fit its hosts with room to grow</text>
         </svg>
       </div>
 

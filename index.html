@@ -4,75 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Haylee Torres – Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="dark-theme">
-  <canvas id="particle-canvas"></canvas>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="meta-row">
+        <div class="loc"><span class="dot"></span><span>Amarillo, TX &middot; <span id="clock">--:--:--</span></span></div>
+        <div class="name-spin"><span>Haylee Torres</span><span class="cli-spinner" id="cli-spinner">⠋</span></div>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </header>
 
-  <nav class="pixel-nav">
-    <button class="nav-toggle" aria-label="Toggle navigation">MENU</button>
-    <div class="nav-menu">
-      <a href="index.html" class="nav-link active">
-        <span class="pixel-icon">⚔</span>Home
-      </a>
-      <a href="resume.html" class="nav-link">
-        <span class="pixel-icon">📜</span>Resume
-      </a>
-      <a href="projects.html" class="nav-link">
-        <span class="pixel-icon">⚡</span>Projects
-      </a>
-      <a href="skills.html" class="nav-link">
-        <span class="pixel-icon">✦</span>Recommendations
-      </a>
-    </div>
-  </nav>
+    <main>
+      <div class="hero">
+        <div class="hero-text">
+          <h1 data-words="Haylee Torres"></h1>
+          <div class="hero-links">
+            <a href="https://github.com/htorres38">GitHub</a>
+            <a href="https://www.linkedin.com/in/haylee-torres">LinkedIn</a>
+            <a href="mailto:hjade7255@outlook.com">Email</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="images/cover_photo.jpeg" alt="Haylee Torres">
+        </div>
+      </div>
 
-  <div class="theme-toggle-container">
-    <div class="theme-toggle" aria-label="Toggle dark/light mode"></div>
+      <section class="reveal">
+        <h2>Introduction</h2>
+        <p>Welcome to my portfolio! This portfolio highlights my growth and achievements as I develop professionally. It offers a glimpse into my personal journey and showcases the skills I've gained along the way.</p>
+      </section>
+
+      <section class="reveal">
+        <h2>About Me</h2>
+        <p>I earned my BBA in Computer Information Systems in December 2025, and I’m currently pursuing a Master’s in Computer Information Systems at WTAMU. I have a broad interest in IT, with projects focused on network infrastructure, full-stack web applications, and database architecture. I’m always working on something new and focused on continuously expanding my skills across the tech space.</p>
+      </section>
+    </main>
+
+    <footer>
+      <div>Haylee Torres &middot; Portfolio &middot; 2026</div>
+    </footer>
   </div>
-
-  <header>
-    <h1 class="typewriter">Haylee Torres</h1>
-  </header>
-
-  <main class="container">
-    <section class="hero">
-      <div class="pixel-frame">
-        <img src="images/cover_photo.jpeg" alt="Haylee Torres" class="pixel-art">
-      </div>
-      <h2 class="subtitle flicker">Building Bridges Byte by Byte</h2>
-    </section>
-
-    <section class="pixel-panel">
-      <h2 class="pixel-title">Introduction</h2>
-      <p>Welcome to my portfolio! This portfolio highlights my growth and achievements as I develop professionally. It offers a glimpse into my personal journey and showcases the skills I've gained along the way.</p>
-    </section>
-
-    <section class="pixel-panel">
-      <h2 class="pixel-title">About Me</h2>
-      <p>I earned my BBA in Computer Information Systems in December 2025, and I’m currently pursuing a Master’s in Computer Information Systems at WTAMU. I have a broad interest in IT, with projects focused on network infrastructure, full-stack web applications, and database architecture. I’m always working on something new and focused on continuously expanding my skills across the tech space.</p>
-    </section>
-
-    <section class="pixel-panel">
-      <h3 class="pixel-title">Contact Me</h3>
-      <div class="contact-links">
-        <a href="https://github.com/htorres38" class="pixel-contact">
-          <span class="pixel-icon">⚙</span>GitHub
-        </a>
-        <a href="mailto:hjade7255@outlook.com" class="pixel-contact">
-          <span class="pixel-icon">✉</span>Email
-        </a>
-        <a href="https://www.linkedin.com/in/haylee-torres" class="pixel-contact">
-          <span class="pixel-icon">⬡</span>LinkedIn
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>Haylee Torres &nbsp;·&nbsp; Portfolio &nbsp;·&nbsp; 2026</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>

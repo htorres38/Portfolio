@@ -4,250 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IPAM System – Haylee Torres</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
-  <style>
-    .ipam-section {
-      margin-bottom: 28px;
-    }
-
-    .pixel-panel .query-explanation {
-      font-size: 0.88em;
-      color: var(--text-secondary);
-      margin-bottom: 14px;
-      padding: 6px 14px;
-      border-left: 2px solid var(--gold-dim);
-    }
-
-    .query-explanation code {
-      font-family: 'Courier New', monospace;
-      font-size: 0.92em;
-      color: var(--gold-bright);
-      background: var(--stone-dark);
-      padding: 1px 5px;
-      border: 1px solid var(--border);
-    }
-
-    .light-theme .query-explanation code { color: var(--gold); }
-
-    .code-block {
-      background: var(--stone-dark);
-      border: 1px solid var(--border);
-      border-left: 3px solid var(--gold-dim);
-      padding: 16px 20px;
-      overflow-x: auto;
-      margin-bottom: 18px;
-      border-radius: 1px;
-    }
-
-    .code-block code {
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 0.8em;
-      color: var(--text-primary);
-      line-height: 1.55;
-      white-space: pre;
-    }
-
-    .code-block-scroll {
-      max-height: 240px;
-      overflow-y: auto;
-    }
-
-    .light-theme .code-block {
-      background: var(--stone-mid);
-      border-color: var(--border-gold);
-    }
-
-    .query-screenshot {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      border: 1px solid var(--border-gold);
-      box-shadow: var(--shadow-deep), 0 0 18px rgba(201,162,39,0.08);
-      border-radius: 1px;
-      transition: all 0.4s ease;
-    }
-
-    .query-screenshot:hover {
-      border-color: var(--gold);
-      box-shadow: var(--shadow-deep), var(--glow-gold);
-      transform: scale(1.01);
-    }
-
-    .screenshot-wrap {
-      margin-top: 4px;
-      overflow-x: auto;
-    }
-
-    .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-family: 'Cinzel', serif;
-      font-size: 0.78em;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--text-secondary);
-      text-decoration: none;
-      border: 1px solid var(--border-gold);
-      background: var(--stone-dark);
-      padding: 10px 22px;
-      border-radius: 1px;
-      transition: all 0.3s ease;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-      margin-bottom: 28px;
-    }
-
-    .back-link:hover {
-      background: var(--gold-dim);
-      color: var(--gold-bright);
-      border-color: var(--gold);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.4), 0 0 12px var(--gold-glow);
-      transform: translateY(-2px);
-    }
-
-    .project-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 9px;
-      margin-top: 16px;
-    }
-
-    .network-diagram {
-      border: 1px solid var(--border-gold);
-      background: var(--bg-card);
-      padding: 12px;
-      margin: 14px 0 20px;
-      overflow-x: auto;
-    }
-
-    .ipam-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 4px 0 0;
-      font-size: 0.8em;
-    }
-    .ipam-table th {
-      font-family: 'Cinzel', serif;
-      font-size: 0.74em;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--gold);
-      font-weight: 600;
-      padding: 8px 12px;
-      border-bottom: 1px solid var(--border-gold);
-      text-align: left;
-    }
-    .ipam-table td {
-      padding: 7px 12px;
-      border-bottom: 1px solid var(--border);
-      color: var(--text-secondary);
-      font-family: 'Courier New', monospace;
-      font-size: 0.95em;
-    }
-    .ipam-table tbody tr:hover td {
-      background: var(--gold-subtle);
-      color: var(--text-primary);
-    }
-  </style>
 </head>
-<body class="dark-theme">
-  <canvas id="particle-canvas"></canvas>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="meta-row">
+        <div class="loc"><span class="dot"></span><span>Amarillo, TX &middot; <span id="clock">--:--:--</span></span></div>
+        <div class="name-spin"><span>Haylee Torres</span><span class="cli-spinner" id="cli-spinner">⠋</span></div>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html" class="active">Projects</a>
+      </nav>
+    </header>
 
-  <nav class="pixel-nav">
-    <button class="nav-toggle" aria-label="Toggle navigation">MENU</button>
-    <div class="nav-menu">
-      <a href="index.html" class="nav-link">
-        <span class="pixel-icon">⚔</span>Home
-      </a>
-      <a href="resume.html" class="nav-link">
-        <span class="pixel-icon">📜</span>Resume
-      </a>
-      <a href="projects.html" class="nav-link active">
-        <span class="pixel-icon">⚡</span>Projects
-      </a>
-      <a href="skills.html" class="nav-link">
-        <span class="pixel-icon">✦</span>Recommendations
-      </a>
-    </div>
-  </nav>
-
-  <div class="theme-toggle-container">
-    <div class="theme-toggle" aria-label="Toggle dark/light mode"></div>
-  </div>
-
-  <header>
-    <h1 class="typewriter">IPAM System</h1>
-  </header>
-
-  <main class="container">
-
-    <a href="projects.html" class="back-link">← Back to Projects</a>
-
-    <section class="pixel-panel hidden-panel ipam-section">
-      <h2 class="pixel-title">Network Design</h2>
-      <p class="query-explanation">The network uses the block <code>10.50.0.0/16</code>, divided into six subnets — one per department VLAN. Each subnet is sized with variable-length subnet masking (VLSM), allocated largest-first so they pack with no overlaps.</p>
-
-      <div class="network-diagram">
-        <svg width="100%" viewBox="0 0 680 270" xmlns="http://www.w3.org/2000/svg">
-          <rect x="10" y="8" width="660" height="252" rx="3" fill="var(--bg-card)" stroke="var(--border-gold)" stroke-width="1"/>
-          <text x="34" y="36" fill="var(--gold)" font-family="Georgia, serif" font-size="13" font-weight="700" letter-spacing="2">SITE NETWORK — 10.50.0.0/16</text>
-          <text x="34" y="54" fill="var(--text-dim)" font-family="Georgia, serif" font-size="11.5">Segmented into 6 VLAN subnets · variable-length subnet masking</text>
-
-          <rect x="28"  y="68" width="190" height="72" rx="2" fill="var(--stone-mid)" stroke="var(--gold)" stroke-width="1"/>
-          <text x="123" y="96"  text-anchor="middle" fill="var(--text-primary)" font-family="Georgia, serif" font-size="12.5" font-weight="600">Field / SCADA (V20)</text>
-          <text x="123" y="116" text-anchor="middle" fill="var(--text-secondary)" font-family="Courier New, monospace" font-size="10">10.50.0.0/24 · 254 hosts</text>
-
-          <rect x="244" y="68" width="192" height="72" rx="2" fill="var(--stone-mid)" stroke="var(--gold)" stroke-width="1"/>
-          <text x="340" y="96"  text-anchor="middle" fill="var(--text-primary)" font-family="Georgia, serif" font-size="12.5" font-weight="600">Operations (V10)</text>
-          <text x="340" y="116" text-anchor="middle" fill="var(--text-secondary)" font-family="Courier New, monospace" font-size="10">10.50.1.0/25 · 126 hosts</text>
-
-          <rect x="462" y="68" width="190" height="72" rx="2" fill="var(--stone-mid)" stroke="var(--gold)" stroke-width="1"/>
-          <text x="557" y="96"  text-anchor="middle" fill="var(--text-primary)" font-family="Georgia, serif" font-size="12.5" font-weight="600">Engineering (V30)</text>
-          <text x="557" y="116" text-anchor="middle" fill="var(--text-secondary)" font-family="Courier New, monospace" font-size="10">10.50.1.128/26 · 62 hosts</text>
-
-          <rect x="28"  y="154" width="190" height="72" rx="2" fill="var(--stone-mid)" stroke="var(--gold)" stroke-width="1"/>
-          <text x="123" y="182" text-anchor="middle" fill="var(--text-primary)" font-family="Georgia, serif" font-size="12.5" font-weight="600">Guest Wi-Fi (V60)</text>
-          <text x="123" y="202" text-anchor="middle" fill="var(--text-secondary)" font-family="Courier New, monospace" font-size="10">10.50.1.192/26 · 62 hosts</text>
-
-          <rect x="244" y="154" width="192" height="72" rx="2" fill="var(--stone-mid)" stroke="var(--gold)" stroke-width="1"/>
-          <text x="340" y="182" text-anchor="middle" fill="var(--text-primary)" font-family="Georgia, serif" font-size="12.5" font-weight="600">IT / Admin (V40)</text>
-          <text x="340" y="202" text-anchor="middle" fill="var(--text-secondary)" font-family="Courier New, monospace" font-size="10">10.50.2.0/27 · 30 hosts</text>
-
-          <rect x="462" y="154" width="190" height="72" rx="2" fill="var(--stone-mid)" stroke="var(--gold)" stroke-width="1"/>
-          <text x="557" y="182" text-anchor="middle" fill="var(--text-primary)" font-family="Georgia, serif" font-size="12.5" font-weight="600">Management (V50)</text>
-          <text x="557" y="202" text-anchor="middle" fill="var(--text-secondary)" font-family="Courier New, monospace" font-size="10">10.50.2.32/28 · 14 hosts</text>
-
-          <text x="340" y="246" text-anchor="middle" fill="var(--text-dim)" font-family="Georgia, serif" font-size="11" font-style="italic">Each VLAN is isolated on its own subnet, sized to fit its hosts with room to grow</text>
-        </svg>
+    <main>
+      <div class="hero">
+        <div class="hero-text">
+          <h1 data-words="IPAM System"></h1>
+        </div>
       </div>
 
-      <table class="ipam-table">
-        <thead>
-          <tr>
-            <th>VLAN</th>
-            <th>Department</th>
-            <th>Subnet</th>
-            <th>Gateway</th>
-            <th>Usable Hosts</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>20</td><td>Field / SCADA</td><td>10.50.0.0/24</td><td>10.50.0.1</td><td>254</td></tr>
-          <tr><td>10</td><td>Operations</td><td>10.50.1.0/25</td><td>10.50.1.1</td><td>126</td></tr>
-          <tr><td>30</td><td>Engineering</td><td>10.50.1.128/26</td><td>10.50.1.129</td><td>62</td></tr>
-          <tr><td>60</td><td>Guest Wi-Fi</td><td>10.50.1.192/26</td><td>10.50.1.193</td><td>62</td></tr>
-          <tr><td>40</td><td>IT / Admin</td><td>10.50.2.0/27</td><td>10.50.2.1</td><td>30</td></tr>
-          <tr><td>50</td><td>Management</td><td>10.50.2.32/28</td><td>10.50.2.33</td><td>14</td></tr>
-        </tbody>
-      </table>
-    </section>
+      <div class="link-row" style="margin-bottom:8px;">
+        <a href="projects.html" class="text-link">← Back to Projects</a>
+      </div>
 
-    <section class="pixel-panel hidden-panel ipam-section">
-      <h2 class="pixel-title">The Schema</h2>
-      <p class="query-explanation">Creates three tables — one for VLANs, one for their subnets, and one for individual IP addresses. Foreign keys link them together.</p>
-      <div class="code-block"><code>DROP TABLE IF EXISTS ip_address;
+      <section class="reveal">
+        <h2>Network Design</h2>
+        <p class="desc">The network uses the block <code>10.50.0.0/16</code>, divided into six subnets — one per department VLAN. Each subnet is sized with variable-length subnet masking (VLSM), allocated largest-first so they pack with no overlaps.</p>
+
+        <div class="diagram">
+          <svg width="100%" viewBox="0 0 680 270" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="8" width="660" height="252" rx="8" fill="var(--paper-2)" stroke="var(--line)" stroke-width="1"/>
+            <text x="34" y="34" fill="var(--ink)" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="500">Site Network — 10.50.0.0/16</text>
+            <text x="34" y="52" fill="var(--muted)" font-family="'Space Grotesk', sans-serif" font-size="11">Segmented into 6 VLAN subnets · variable-length subnet masking</text>
+
+            <rect x="28"  y="68" width="190" height="72" rx="5" fill="var(--paper)" stroke="var(--accent)" stroke-width="1.3"/>
+            <text x="123" y="96"  text-anchor="middle" fill="var(--ink)" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="500">Field / SCADA (V20)</text>
+            <text x="123" y="116" text-anchor="middle" fill="var(--muted)" font-family="'JetBrains Mono', monospace" font-size="10">10.50.0.0/24 · 254 hosts</text>
+
+            <rect x="244" y="68" width="192" height="72" rx="5" fill="var(--paper)" stroke="var(--accent)" stroke-width="1.3"/>
+            <text x="340" y="96"  text-anchor="middle" fill="var(--ink)" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="500">Operations (V10)</text>
+            <text x="340" y="116" text-anchor="middle" fill="var(--muted)" font-family="'JetBrains Mono', monospace" font-size="10">10.50.1.0/25 · 126 hosts</text>
+
+            <rect x="462" y="68" width="190" height="72" rx="5" fill="var(--paper)" stroke="var(--accent)" stroke-width="1.3"/>
+            <text x="557" y="96"  text-anchor="middle" fill="var(--ink)" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="500">Engineering (V30)</text>
+            <text x="557" y="116" text-anchor="middle" fill="var(--muted)" font-family="'JetBrains Mono', monospace" font-size="10">10.50.1.128/26 · 62 hosts</text>
+
+            <rect x="28"  y="154" width="190" height="72" rx="5" fill="var(--paper)" stroke="var(--accent)" stroke-width="1.3"/>
+            <text x="123" y="182" text-anchor="middle" fill="var(--ink)" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="500">Guest Wi-Fi (V60)</text>
+            <text x="123" y="202" text-anchor="middle" fill="var(--muted)" font-family="'JetBrains Mono', monospace" font-size="10">10.50.1.192/26 · 62 hosts</text>
+
+            <rect x="244" y="154" width="192" height="72" rx="5" fill="var(--paper)" stroke="var(--accent)" stroke-width="1.3"/>
+            <text x="340" y="182" text-anchor="middle" fill="var(--ink)" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="500">IT / Admin (V40)</text>
+            <text x="340" y="202" text-anchor="middle" fill="var(--muted)" font-family="'JetBrains Mono', monospace" font-size="10">10.50.2.0/27 · 30 hosts</text>
+
+            <rect x="462" y="154" width="190" height="72" rx="5" fill="var(--paper)" stroke="var(--accent)" stroke-width="1.3"/>
+            <text x="557" y="182" text-anchor="middle" fill="var(--ink)" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="500">Management (V50)</text>
+            <text x="557" y="202" text-anchor="middle" fill="var(--muted)" font-family="'JetBrains Mono', monospace" font-size="10">10.50.2.32/28 · 14 hosts</text>
+
+            <text x="340" y="242" text-anchor="middle" fill="var(--muted)" font-family="'Space Grotesk', sans-serif" font-size="11" font-style="italic">Each VLAN is isolated on its own subnet, sized to fit its hosts with room to grow</text>
+          </svg>
+        </div>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>VLAN</th>
+              <th>Department</th>
+              <th>Subnet</th>
+              <th>Gateway</th>
+              <th>Usable Hosts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>20</td><td>Field / SCADA</td><td>10.50.0.0/24</td><td>10.50.0.1</td><td>254</td></tr>
+            <tr><td>10</td><td>Operations</td><td>10.50.1.0/25</td><td>10.50.1.1</td><td>126</td></tr>
+            <tr><td>30</td><td>Engineering</td><td>10.50.1.128/26</td><td>10.50.1.129</td><td>62</td></tr>
+            <tr><td>60</td><td>Guest Wi-Fi</td><td>10.50.1.192/26</td><td>10.50.1.193</td><td>62</td></tr>
+            <tr><td>40</td><td>IT / Admin</td><td>10.50.2.0/27</td><td>10.50.2.1</td><td>30</td></tr>
+            <tr><td>50</td><td>Management</td><td>10.50.2.32/28</td><td>10.50.2.33</td><td>14</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="reveal">
+        <h2>The Schema</h2>
+        <p class="desc">Creates three tables — one for VLANs, one for their subnets, and one for individual IP addresses. Foreign keys link them together.</p>
+        <div class="code-block"><code>DROP TABLE IF EXISTS ip_address;
 DROP TABLE IF EXISTS subnet;
 DROP TABLE IF EXISTS vlan;
 
@@ -279,12 +128,12 @@ CREATE TABLE ip_address (
     device_name  TEXT,
     FOREIGN KEY (subnet_id) REFERENCES subnet(subnet_id)
 );</code></div>
-    </section>
+      </section>
 
-    <section class="pixel-panel hidden-panel ipam-section">
-      <h2 class="pixel-title">The Data</h2>
-      <p class="query-explanation">Loads the six VLANs and their subnets from the network design, plus sample IP assignments.</p>
-      <div class="code-block code-block-scroll"><code>INSERT INTO vlan (vlan_number, vlan_name, description) VALUES
+      <section class="reveal">
+        <h2>The Data</h2>
+        <p class="desc">Loads the six VLANs and their subnets from the network design, plus sample IP assignments.</p>
+        <div class="code-block code-block-scroll"><code>INSERT INTO vlan (vlan_number, vlan_name, description) VALUES
     (20, 'Field / SCADA', 'Field automation and SCADA end devices'),
     (10, 'Operations', 'Operations department workstations'),
     (30, 'Engineering', 'Engineering workstations'),
@@ -321,26 +170,26 @@ INSERT INTO ip_address (subnet_id, ip_address, status, device_name) VALUES
     (5, '10.50.2.6',   'assigned',  'IT-WS-01'),
     (6, '10.50.2.33',  'reserved',  'Gateway'),
     (6, '10.50.2.40',  'assigned',  'MGMT-WS-01');</code></div>
-    </section>
+      </section>
 
-    <section class="pixel-panel hidden-panel ipam-section">
-      <h2 class="pixel-title">Query 1 — Full Addressing Plan</h2>
-      <p class="query-explanation">Shows every VLAN with its subnet, gateway, broadcast, and host count.</p>
-      <div class="code-block"><code>SELECT v.vlan_number, v.vlan_name,
+      <section class="reveal">
+        <h2>Query 1 — Full Addressing Plan</h2>
+        <p class="desc">Shows every VLAN with its subnet, gateway, broadcast, and host count.</p>
+        <div class="code-block"><code>SELECT v.vlan_number, v.vlan_name,
        s.network_address, s.cidr_prefix, s.subnet_mask,
        s.gateway, s.broadcast, s.usable_hosts
 FROM vlan v
 JOIN subnet s ON v.vlan_id = s.vlan_id
 ORDER BY s.network_address;</code></div>
-      <div class="screenshot-wrap">
-        <img src="screenshots/Query1.png" alt="Query 1 results — full addressing plan" class="query-screenshot">
-      </div>
-    </section>
+        <div class="screenshot-wrap">
+          <img src="screenshots/Query1.png" alt="Query 1 results — full addressing plan" class="query-screenshot">
+        </div>
+      </section>
 
-    <section class="pixel-panel hidden-panel ipam-section">
-      <h2 class="pixel-title">Query 2 — Subnet Utilization</h2>
-      <p class="query-explanation">Shows how full each subnet is — assigned addresses vs. capacity, as a percentage.</p>
-      <div class="code-block"><code>SELECT v.vlan_name,
+      <section class="reveal">
+        <h2>Query 2 — Subnet Utilization</h2>
+        <p class="desc">Shows how full each subnet is — assigned addresses vs. capacity, as a percentage.</p>
+        <div class="code-block"><code>SELECT v.vlan_name,
        s.network_address || '/' || s.cidr_prefix AS subnet,
        s.usable_hosts,
        SUM(CASE WHEN i.status = 'assigned' THEN 1 ELSE 0 END) AS assigned,
@@ -350,98 +199,83 @@ JOIN vlan v ON s.vlan_id = v.vlan_id
 LEFT JOIN ip_address i ON s.subnet_id = i.subnet_id
 GROUP BY s.subnet_id
 ORDER BY pct_used DESC;</code></div>
-      <div class="screenshot-wrap">
-        <img src="screenshots/Query2.png" alt="Query 2 results — subnet utilization" class="query-screenshot">
-      </div>
-    </section>
+        <div class="screenshot-wrap">
+          <img src="screenshots/Query2.png" alt="Query 2 results — subnet utilization" class="query-screenshot">
+        </div>
+      </section>
 
-    <section class="pixel-panel hidden-panel ipam-section">
-      <h2 class="pixel-title">Query 3 — Devices on a VLAN</h2>
-      <p class="query-explanation">Lists everything on the Operations VLAN and whether each address is used or free.</p>
-      <div class="code-block"><code>SELECT v.vlan_name, i.ip_address, i.device_name, i.status
+      <section class="reveal">
+        <h2>Query 3 — Devices on a VLAN</h2>
+        <p class="desc">Lists everything on the Operations VLAN and whether each address is used or free.</p>
+        <div class="code-block"><code>SELECT v.vlan_name, i.ip_address, i.device_name, i.status
 FROM ip_address i
 JOIN subnet s ON i.subnet_id = s.subnet_id
 JOIN vlan v ON s.vlan_id = v.vlan_id
 WHERE v.vlan_name = 'Operations'
 ORDER BY i.ip_address;</code></div>
-      <div class="screenshot-wrap">
-        <img src="screenshots/Query3.png" alt="Query 3 results — devices on Operations VLAN" class="query-screenshot">
-      </div>
-    </section>
+        <div class="screenshot-wrap">
+          <img src="screenshots/Query3.png" alt="Query 3 results — devices on Operations VLAN" class="query-screenshot">
+        </div>
+      </section>
 
-    <section class="pixel-panel hidden-panel ipam-section">
-      <h2 class="pixel-title">Query 4 — Find a VLAN by IP</h2>
-      <p class="query-explanation">Looks up a single IP and tells you which VLAN and subnet it belongs to.</p>
-      <div class="code-block"><code>SELECT i.ip_address, v.vlan_number, v.vlan_name,
+      <section class="reveal">
+        <h2>Query 4 — Find a VLAN by IP</h2>
+        <p class="desc">Looks up a single IP and tells you which VLAN and subnet it belongs to.</p>
+        <div class="code-block"><code>SELECT i.ip_address, v.vlan_number, v.vlan_name,
        s.network_address || '/' || s.cidr_prefix AS subnet
 FROM ip_address i
 JOIN subnet s ON i.subnet_id = s.subnet_id
 JOIN vlan v ON s.vlan_id = v.vlan_id
 WHERE i.ip_address = '10.50.0.10';</code></div>
-      <div class="screenshot-wrap">
-        <img src="screenshots/Query4.png" alt="Query 4 results — find VLAN by IP" class="query-screenshot">
-      </div>
-    </section>
+        <div class="screenshot-wrap">
+          <img src="screenshots/Query4.png" alt="Query 4 results — find VLAN by IP" class="query-screenshot">
+        </div>
+      </section>
 
-    <section class="pixel-panel hidden-panel ipam-section">
-      <h2 class="pixel-title">Query 5 — Free IP Addresses</h2>
-      <p class="query-explanation">Lists the addresses that are still available to assign, grouped by VLAN.</p>
-      <div class="code-block"><code>SELECT v.vlan_name, i.ip_address
+      <section class="reveal">
+        <h2>Query 5 — Free IP Addresses</h2>
+        <p class="desc">Lists the addresses that are still available to assign, grouped by VLAN.</p>
+        <div class="code-block"><code>SELECT v.vlan_name, i.ip_address
 FROM ip_address i
 JOIN subnet s ON i.subnet_id = s.subnet_id
 JOIN vlan v ON s.vlan_id = v.vlan_id
 WHERE i.status = 'available'
 ORDER BY v.vlan_name, i.ip_address;</code></div>
-      <div class="screenshot-wrap">
-        <img src="screenshots/Query5.png" alt="Query 5 results — free IP addresses" class="query-screenshot">
-      </div>
-    </section>
+        <div class="screenshot-wrap">
+          <img src="screenshots/Query5.png" alt="Query 5 results — free IP addresses" class="query-screenshot">
+        </div>
+      </section>
 
-    <section class="pixel-panel hidden-panel ipam-section">
-      <h2 class="pixel-title">Query 6 — Reserved Addresses</h2>
-      <p class="query-explanation">Shows the reserved gateway addresses for each VLAN.</p>
-      <div class="code-block"><code>SELECT v.vlan_name, i.ip_address, i.device_name
+      <section class="reveal">
+        <h2>Query 6 — Reserved Addresses</h2>
+        <p class="desc">Shows the reserved gateway addresses for each VLAN.</p>
+        <div class="code-block"><code>SELECT v.vlan_name, i.ip_address, i.device_name
 FROM ip_address i
 JOIN subnet s ON i.subnet_id = s.subnet_id
 JOIN vlan v ON s.vlan_id = v.vlan_id
 WHERE i.status = 'reserved'
 ORDER BY i.ip_address;</code></div>
-      <div class="screenshot-wrap">
-        <img src="screenshots/Query6.png" alt="Query 6 results — reserved addresses" class="query-screenshot">
-      </div>
-    </section>
+        <div class="screenshot-wrap">
+          <img src="screenshots/Query6.png" alt="Query 6 results — reserved addresses" class="query-screenshot">
+        </div>
+      </section>
 
-    <section class="pixel-panel hidden-panel ipam-section">
-      <h2 class="pixel-title">Query 7 — Total Capacity</h2>
-      <p class="query-explanation">Counts the subnets and total usable addresses across the whole network.</p>
-      <div class="code-block"><code>SELECT COUNT(*) AS subnet_count,
+      <section class="reveal">
+        <h2>Query 7 — Total Capacity</h2>
+        <p class="desc">Counts the subnets and total usable addresses across the whole network.</p>
+        <div class="code-block"><code>SELECT COUNT(*) AS subnet_count,
        SUM(usable_hosts) AS total_usable_addresses
 FROM subnet;</code></div>
-      <div class="screenshot-wrap">
-        <img src="screenshots/Query7.png" alt="Query 7 results — total network capacity" class="query-screenshot">
-      </div>
-    </section>
+        <div class="screenshot-wrap">
+          <img src="screenshots/Query7.png" alt="Query 7 results — total network capacity" class="query-screenshot">
+        </div>
+      </section>
+    </main>
 
-    <section class="pixel-panel hidden-panel">
-      <h3 class="pixel-title">Connect with Me</h3>
-      <div class="contact-links">
-        <a href="https://github.com/htorres38" class="pixel-contact">
-          <span class="pixel-icon">⚙</span>GitHub
-        </a>
-        <a href="mailto:hjade7255@outlook.com" class="pixel-contact">
-          <span class="pixel-icon">✉</span>Email
-        </a>
-        <a href="https://www.linkedin.com/in/haylee-torres" class="pixel-contact">
-          <span class="pixel-icon">⬡</span>LinkedIn
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <p>Haylee Torres &nbsp;·&nbsp; Portfolio &nbsp;·&nbsp; 2026</p>
-  </footer>
+    <footer>
+      <div>Haylee Torres &middot; Portfolio &middot; 2026</div>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>

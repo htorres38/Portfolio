@@ -1,159 +1,173 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume – Haylee Torres</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 </head>
-<body class="dark-theme">
-  <canvas id="particle-canvas"></canvas>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="meta-row">
+        <div class="loc"><span class="dot"></span><span>Amarillo, TX &middot; <span id="clock">--:--:--</span></span></div>
+        <div class="name-spin"><span>Haylee Torres</span><span class="cli-spinner" id="cli-spinner">⠋</span></div>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="resume.html" class="active">Resume</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </header>
 
-  <nav class="pixel-nav">
-    <button class="nav-toggle" aria-label="Toggle navigation">MENU</button>
-    <div class="nav-menu">
-      <a href="index.html" class="nav-link">
-        <span class="pixel-icon">⚔</span>Home
-      </a>
-      <a href="resume.html" class="nav-link active">
-        <span class="pixel-icon">📜</span>Resume
-      </a>
-      <a href="projects.html" class="nav-link">
-        <span class="pixel-icon">⚡</span>Projects
-      </a>
-      <a href="skills.html" class="nav-link">
-        <span class="pixel-icon">✦</span>Recommendations
-      </a>
-    </div>
-  </nav>
-<div class="theme-toggle-container">
-  <div class="theme-toggle" aria-label="Toggle dark/light mode"></div>
-</div>
-  <header>
-    <h1 class="typewriter">My Resume</h1>
-  </header>
+    <main>
+      <div class="hero">
+        <div class="hero-text">
+          <h1 data-words="My Resume"></h1>
+        </div>
+      </div>
 
-  <main class="container">
-    <section class="pixel-panel">
-      <h2 class="pixel-title">Professional Summary</h2>
-      <p>Computer Information Systems Graduate Student at West Texas A&M University with experience in programming, database development, and networking.</p>
-    </section>
-<section class="pixel-panel">
-  <h2 class="pixel-title">Technical Skills</h2>
-  <div class="skills-groups">
-    <div class="skill-group">
-      <span class="skill-group-label">Languages & Query</span>
-      <div class="project-skills">
-        <span class="skill-tag">SQL</span>
-        <span class="skill-tag">Python (ETL, scripting)</span>
-        <span class="skill-tag">C#</span>
-        <span class="skill-tag">HTML / CSS</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <span class="skill-group-label">Networking</span>
-      <div class="project-skills">
-        <span class="skill-tag">Nmap (host discovery, ping sweeps)</span>
-        <span class="skill-tag">Wireshark (basic capture/filtering)</span>
-        <span class="skill-tag">IPv4 addressing & subnetting (binary/CIDR)</span>
-        <span class="skill-tag">VLANs & switching fundamentals</span>
-        <span class="skill-tag">Cisco IOS CLI fundamentals</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <span class="skill-group-label">Databases & Backend</span>
-      <div class="project-skills">
-        <span class="skill-tag">MySQL</span>
-        <span class="skill-tag">SQLite</span>
-        <span class="skill-tag">Supabase</span>
-        <span class="skill-tag">Neon</span>
-        <span class="skill-tag">PowerSync</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <span class="skill-group-label">Version Control & IDEs</span>
-      <div class="project-skills">
-        <span class="skill-tag">Git</span>
-        <span class="skill-tag">GitHub</span>
-        <span class="skill-tag">VS Code</span>
-        <span class="skill-tag">Visual Studio</span>
-        <span class="skill-tag">JetBrains</span>
-      </div>
-    </div>
-  </div>
-</section>
-    <section class="pixel-panel">
-      <h2 class="pixel-title">Education</h2>
-      <p>Master of Science in Computer Information Systems & Business Analytics, <strong>West Texas A&M University</strong> (In Progress)
-    <br>Bachelor of Business Administration in Computer Information Systems, <strong>West Texas A&M University</strong>, Dec 2025</p>
-    </section>
-    <section class="pixel-panel">
-      <h2 class="pixel-title">Experience</h2>
-      <p><strong>Pricing Intern - <i>Xcel Energy | May 2025 – Present Amarillo, TX </i></strong>
-        <br><span style="display:inline-block; margin-bottom: 0.5em;">Developed and maintained queries and dashboards to support pricing projects</span>
-        <br><span style="display:inline-block; margin-bottom: 0.5em;">Monitored data pipelines and fixed issues in source data to keep reporting accurate and reliable.</span>
-        <br><span style="display:inline-block; margin-bottom: 0.5em;">Automated monthly tasks like table updates and dashboard refreshes on a schedule, cutting down manual work.</span>
-      </p>
-      <p><strong>Database Developer - <i>Buffteks - West Texas A&M University| August 2025 - May 2026 Canyon, TX</i></strong>
-        <br><span style="display:inline-block; margin-bottom: 0.5em;">Collaborated with a team to design the ERD for a classroom scheduling application, then independently wrote the
-code to build the database from that design — creating the tables, relationships, and test data.</span>
-        <br><span style="display:inline-block; margin-bottom: 0.5em;">Independently developed the stored procedures (create, retrieve, update, delete) that powered the application’s core
-operations.</span>
-      </p>
+      <section class="reveal">
+        <h2>Professional Summary</h2>
+        <p>Computer Information Systems Graduate Student at West Texas A&M University with experience in programming, database development, and networking.</p>
+      </section>
 
-      <p><strong>Substitute Teacher - <i>Borger Independent School District | August 2023 - April 2025 Borger, TX</i></strong>
-        <br><span style="display:inline-block; margin-bottom: 0.5em;">Maintained structure in fast-paced environments by following established procedures, prioritizing multiple tasks, and
-staying composed under pressure.</span>
-        <br><span style="display:inline-block; margin-bottom: 0.5em;">Troubleshot classroom technology and supported daily operations, communicating clearly with staff and adapting
-quickly to new assignments and locations.</span>
-      </p>
-    </section>
-        <section class="pixel-panel">
-      <h2 class="pixel-title">Achievements</h2>
-      <div class="achievement-list">
-        <span class="achievement-item">President's List, WTAMU, Fall 2024</span>
-        <span class="achievement-item">President's List, WTAMU, Fall 2023</span>
-        <span class="achievement-item">Outstanding Accomplishment in Biology, Frank Phillips College, 2023</span>
-        <span class="achievement-item">Phi Theta Kappa Member, January 2023</span>
-      </div>
-    </section>
-        <section class="pixel-panel">
-      <h2 class="pixel-title">Volunteer Experience</h2>
-          <p><b>Server</b> - <i>Borger Care Net Pregnancy Center Fundraiser Banquet</i>
-        <br>Fellowship Church, Borger, TX &nbsp;·&nbsp; <i>April 2023</i></p>
-          <p>Supported a high-attendance community fundraiser by assisting with event flow, coordinating with team members, and helping maintain an organized and welcoming environment.</p>
-          <div class="community-gallery">
-            <div class="pixel-frame"><img src="images/community2.png" alt="Volunteer Work" class="community-img"></div>
-            <div class="pixel-frame"><img src="images/community.png" alt="Volunteer Work" class="community-img"></div>
-            <div class="pixel-frame"><img src="images/community3.png" alt="Volunteer Work" class="community-img"></div>
-            <div class="pixel-frame"><img src="images/community4.png" alt="Volunteer Work" class="community-img"></div>
+      <section class="reveal">
+        <h2>Technical Skills</h2>
+        <div class="skill-groups">
+          <div>
+            <span class="skill-group-label">Languages &amp; Query</span>
+            <div class="chip-row">
+              <span class="chip">SQL</span>
+              <span class="chip">Python (ETL, scripting)</span>
+              <span class="chip">C#</span>
+              <span class="chip">HTML / CSS</span>
+            </div>
           </div>
-    </section>
-    <section class="pixel-panel">
-      <h3 class="pixel-title">Connect with Me</h3>
-      <div class="contact-links">
-        <a href="https://github.com/htorres38" class="pixel-contact">
-          <span class="pixel-icon">⚙</span>GitHub
-        </a>
-        <a href="mailto:hjade7255@outlook.com" class="pixel-contact">
-          <span class="pixel-icon">✉</span>Email
-        </a>
-        <a href="https://www.linkedin.com/in/haylee-torres" class="pixel-contact">
-          <span class="pixel-icon">⬡</span>LinkedIn
-        </a>
-      </div>
-    </section>
-  </main>
+          <div>
+            <span class="skill-group-label">Networking</span>
+            <div class="chip-row">
+              <span class="chip">Nmap (host discovery, ping sweeps)</span>
+              <span class="chip">Wireshark (basic capture/filtering)</span>
+              <span class="chip">IPv4 addressing &amp; subnetting (binary/CIDR)</span>
+              <span class="chip">VLANs &amp; switching fundamentals</span>
+              <span class="chip">Cisco IOS CLI fundamentals</span>
+            </div>
+          </div>
+          <div>
+            <span class="skill-group-label">Databases &amp; Backend</span>
+            <div class="chip-row">
+              <span class="chip">MySQL</span>
+              <span class="chip">SQLite</span>
+              <span class="chip">Supabase</span>
+              <span class="chip">Neon</span>
+              <span class="chip">PowerSync</span>
+            </div>
+          </div>
+          <div>
+            <span class="skill-group-label">Version Control &amp; IDEs</span>
+            <div class="chip-row">
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">VS Code</span>
+              <span class="chip">Visual Studio</span>
+              <span class="chip">JetBrains</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <footer class="site-footer">
-    <p>Haylee Torres &nbsp;·&nbsp; Portfolio &nbsp;·&nbsp; 2026</p>
-  </footer>
+      <section class="reveal">
+        <h2>Education</h2>
+        <div class="exp-item">
+          <div>
+            <div class="exp-org">West Texas A&amp;M University</div>
+            <div class="exp-role">MS, Computer Information Systems &amp; Business Analytics</div>
+          </div>
+          <div class="exp-date">Jan 2026 - Dec 2027</div>
+        </div>
+        <div class="exp-item">
+          <div>
+            <div class="exp-org">West Texas A&amp;M University</div>
+            <div class="exp-role">BBA, Computer Information Systems</div>
+          </div>
+          <div class="exp-date">Dec 2025</div>
+        </div>
+      </section>
+
+      <section class="reveal">
+        <h2>Experience</h2>
+        <div class="exp-item">
+          <div>
+            <div class="exp-org">Xcel Energy</div>
+            <div class="exp-role">Pricing Intern &middot; Amarillo, TX</div>
+          </div>
+          <div class="exp-date">May 2025 – Present</div>
+          <ul class="exp-bullets">
+            <li>Developed and maintained queries and dashboards to support pricing projects</li>
+            <li>Monitored data pipelines and fixed issues in source data to keep reporting accurate and reliable.</li>
+            <li>Automated monthly tasks like table updates and dashboard refreshes on a schedule, cutting down manual work.</li>
+          </ul>
+        </div>
+        <div class="exp-item">
+          <div>
+            <div class="exp-org">Buffteks &middot; West Texas A&amp;M University</div>
+            <div class="exp-role">Database Developer &middot; Canyon, TX</div>
+          </div>
+          <div class="exp-date">August 2025 – May 2026</div>
+          <ul class="exp-bullets">
+            <li>Collaborated with a team to design the ERD for a classroom scheduling application, then independently wrote the code to build the database from that design — creating the tables, relationships, and test data.</li>
+            <li>Independently developed the stored procedures (create, retrieve, update, delete) that powered the application's core operations.</li>
+          </ul>
+        </div>
+        <div class="exp-item">
+          <div>
+            <div class="exp-org">Borger Independent School District</div>
+            <div class="exp-role">Substitute Teacher &middot; Borger, TX</div>
+          </div>
+          <div class="exp-date">August 2023 – April 2025</div>
+          <ul class="exp-bullets">
+            <li>Maintained structure in fast-paced environments by following established procedures, prioritizing multiple tasks, and staying composed under pressure.</li>
+            <li>Troubleshot classroom technology and supported daily operations, communicating clearly with staff and adapting quickly to new assignments and locations.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="reveal">
+        <h2>Recognitions</h2>
+        <div class="line-row">President's List, WTAMU, Fall 2024</div>
+        <div class="line-row">President's List, WTAMU, Fall 2023</div>
+        <div class="line-row">Outstanding Accomplishment in Biology, Frank Phillips College, 2023</div>
+        <div class="line-row">Phi Theta Kappa Member, January 2023</div>
+      </section>
+
+      <section class="reveal">
+        <h2>Volunteer Experience</h2>
+        <div class="exp-item">
+          <div>
+            <div class="exp-org">Borger Care Net Pregnancy Center Fundraiser Banquet</div>
+            <div class="exp-role">Server &middot; Fellowship Church, Borger, TX</div>
+          </div>
+          <div class="exp-date">April 2023</div>
+        </div>
+        <p>Supported a high-attendance community fundraiser by assisting with event flow, coordinating with team members, and helping maintain an organized and welcoming environment.</p>
+        <div class="gallery">
+          <img src="images/community2.png" alt="Volunteer Work">
+          <img src="images/community.png" alt="Volunteer Work">
+          <img src="images/community3.png" alt="Volunteer Work">
+          <img src="images/community4.png" alt="Volunteer Work">
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>Haylee Torres &middot; Portfolio &middot; 2026</div>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-

@@ -4,145 +4,113 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects – Haylee Torres</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 </head>
-<body class="dark-theme">
-  <canvas id="particle-canvas"></canvas>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="meta-row">
+        <div class="loc"><span class="dot"></span><span>Amarillo, TX &middot; <span id="clock">--:--:--</span></span></div>
+        <div class="name-spin"><span>Haylee Torres</span><span class="cli-spinner" id="cli-spinner">⠋</span></div>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html" class="active">Projects</a>
+      </nav>
+    </header>
 
-  <nav class="pixel-nav">
-    <button class="nav-toggle" aria-label="Toggle navigation">MENU</button>
-    <div class="nav-menu">
-      <a href="index.html" class="nav-link">
-        <span class="pixel-icon">⚔</span>Home
-      </a>
-      <a href="resume.html" class="nav-link">
-        <span class="pixel-icon">📜</span>Resume
-      </a>
-      <a href="projects.html" class="nav-link active">
-        <span class="pixel-icon">⚡</span>Projects
-      </a>
-      <a href="skills.html" class="nav-link">
-        <span class="pixel-icon">✦</span>Recommendations
-      </a>
-    </div>
-  </nav>
-<div class="theme-toggle-container">
-  <div class="theme-toggle" aria-label="Toggle dark/light mode"></div>
-</div>
-  <header>
-    <h1 class="typewriter">Project Gallery</h1>
-  </header>
-
-  <main class="container">
-    <section class="pixel-panel">
-      <h2 class="pixel-title">Featured Work</h2>
-      <p>A selection of projects spanning networking, web development, and database design.</p>
-    </section>
-
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Prep Net</h3>
-        <p>An online CCNA study application that saves your progress, lab scores, 
-          and streaks to a Neon cloud database in real time.
-          It features a built-in AI tutor that reads your current lesson and slide to answer 
-          your specific questions about the material. </p>
-        <div class="project-skills">
-          <span class="skill-tag">TypeScript</span>
-          <span class="skill-tag">Tailwind CSS</span>
-          <span class="skill-tag">Neon (PostgreSQL)</span>
-          <span class="skill-tag">Supabase Auth</span>
-          <span class="skill-tag">Google Gemini</span>
-          <span class="skill-tag">PowerSync</span>
-
-        </div>
-        <div class="project-links">
-          <a href="https://prep-net.vercel.app" class="download-link">View Website</a>
-          <a href="https://github.com/htorres38/Prep-Net.git" class="download-link">GitHub</a>
+    <main>
+      <div class="hero">
+        <div class="hero-text">
+          <h1 data-words="Project Gallery"></h1>
+          <p class="sub">A selection of projects spanning networking, web development, and database design.<span class="cursor"></span></p>
         </div>
       </div>
 
-      <div class="project-card">
-        <h3>IP Address Management (IPAM) System</h3>
-        <p>Designed a network's IP addressing and built a database to manage it. I divided
-     a large network block into six properly sized subnets — one per department — then
-     built a SQLite database to track each subnet, VLAN, and IP address. Built-in
-     queries show how full each subnet is, which addresses are free, and what's
-     assigned where.</p>
-        <div class="project-skills">
-          <span class="skill-tag">Network Design</span>
-          <span class="skill-tag">Subnetting</span>
-          <span class="skill-tag">SQLite</span>
-          <span class="skill-tag">VLSM</span>
-        </div>
-        <div class="project-links">
-          <a href="ipam-overview.html" class="download-link">Project Overview</a>
-          <a href="https://github.com/htorres38/ipam-system.git" class="download-link">GitHub</a>
-        </div>
-      </div>
+      <section class="reveal">
+        <h2>Featured Work</h2>
+        <div class="work-list">
+          <div class="work-entry">
+            <div class="work-head">
+              <h3 class="work-title">Prep Net</h3>
+            </div>
+            <p>An online CCNA study application that saves your progress, lab scores, and streaks to a Neon cloud database in real time. It features a built-in AI tutor that reads your current lesson and slide to answer your specific questions about the material.</p>
+            <div class="chip-row">
+              <span class="chip">TypeScript</span>
+              <span class="chip">Tailwind CSS</span>
+              <span class="chip">Neon (PostgreSQL)</span>
+              <span class="chip">Supabase Auth</span>
+              <span class="chip">Google Gemini</span>
+              <span class="chip">PowerSync</span>
+            </div>
+            <div class="link-row">
+              <a href="https://prep-net.vercel.app" class="text-link">View Website →</a>
+              <a href="https://github.com/htorres38/Prep-Net.git" class="text-link">GitHub →</a>
+            </div>
+          </div>
 
-      <div class="project-card">
-        <h3>Home Network Monitoring Dashboard</h3>
-        <p>Built a Python tool that discovers devices on a network with a ping-sweep, tracks them by MAC address through
-     the ARP table so they stay identified even as DHCP changes their IP, and logs uptime and latency to a Neon
-     PostgreSQL database with threshold-based alerts for outages and slowdowns. Used Nmap to identify device vendors
-     and scan for open ports, then built a Streamlit dashboard with live status, latency charts, and a privacy mode
-     for public sharing.</p>
-        <div class="project-skills">
-          <span class="skill-tag">Nmap</span>
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">Streamlit</span>
-        </div>
-        <div class="project-links">
-          <a href="network-overview.html" class="download-link">Project Overview</a>
-          <a href="https://github.com/htorres38/Network-Monitor.git" class="download-link">GitHub</a>
-        </div>
-      </div>
+          <div class="work-entry">
+            <div class="work-head">
+              <h3 class="work-title">IP Address Management (IPAM) System</h3>
+            </div>
+            <p>Designed a network's IP addressing and built a database to manage it. I divided a large network block into six properly sized subnets — one per department — then built a SQLite database to track each subnet, VLAN, and IP address. Built-in queries show how full each subnet is, which addresses are free, and what's assigned where.</p>
+            <div class="chip-row">
+              <span class="chip">Network Design</span>
+              <span class="chip">Subnetting</span>
+              <span class="chip">SQLite</span>
+              <span class="chip">VLSM</span>
+            </div>
+            <div class="link-row">
+              <a href="ipam-overview.html" class="text-link">Project Overview →</a>
+              <a href="https://github.com/htorres38/ipam-system.git" class="text-link">GitHub →</a>
+            </div>
+          </div>
 
-      <div class="project-card">
-        <h3>Fuel Tracker Dashboard Python</h3>
-        <p>Developed an interactive dashboard in Python using Streamlit to analyze monthly gasoline prices across Houston,
-     Texas, and the U.S. (2020–2025). The app visualizes MoM, YoY, and spread metrics to reveal key trends and
-     seasonal patterns in fuel prices.</p>
-        <div class="project-skills">
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">Streamlit</span>
-          <span class="skill-tag">Data Visualization</span>
-        </div>
-        <div class="project-links">
-          <a href="https://houston-fuel-tracker-dashboard.streamlit.app" class="download-link">View Dashboard</a>
-          <a href="https://github.com/htorres38/Fuel-Tracker.git" class="download-link">GitHub</a>
-        </div>
-      </div>
-    </div>
+          <div class="work-entry">
+            <div class="work-head">
+              <h3 class="work-title">Home Network Monitoring Dashboard</h3>
+            </div>
+            <p>Built a Python tool that discovers devices on a network with a ping-sweep, tracks them by MAC address through the ARP table so they stay identified even as DHCP changes their IP, and logs uptime and latency to a Neon PostgreSQL database with threshold-based alerts for outages and slowdowns. Used Nmap to identify device vendors and scan for open ports, then built a Streamlit dashboard with live status, latency charts, and a privacy mode for public sharing.</p>
+            <div class="chip-row">
+              <span class="chip">Nmap</span>
+              <span class="chip">Python</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Streamlit</span>
+            </div>
+            <div class="link-row">
+              <a href="network-overview.html" class="text-link">Project Overview →</a>
+              <a href="https://github.com/htorres38/Network-Monitor.git" class="text-link">GitHub →</a>
+            </div>
+          </div>
 
-        <section class="pixel-panel">
-      <h3 class="pixel-title">Connect with Me</h3>
-      <div class="contact-links">
-        <a href="https://github.com/htorres38" class="pixel-contact">
-          <span class="pixel-icon">⚙</span>GitHub
-        </a>
-        <a href="mailto:hjade7255@outlook.com" class="pixel-contact">
-          <span class="pixel-icon">✉</span>Email
-        </a>
-        <a href="https://www.linkedin.com/in/haylee-torres" class="pixel-contact">
-          <span class="pixel-icon">⬡</span>LinkedIn
-        </a>
-      </div>
-    </section>
-  </main>
+          <div class="work-entry">
+            <div class="work-head">
+              <h3 class="work-title">Fuel Tracker Dashboard Python</h3>
+            </div>
+            <p>Developed an interactive dashboard in Python using Streamlit to analyze monthly gasoline prices across Houston, Texas, and the U.S. (2020–2025). The app visualizes MoM, YoY, and spread metrics to reveal key trends and seasonal patterns in fuel prices.</p>
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">Streamlit</span>
+              <span class="chip">Data Visualization</span>
+            </div>
+            <div class="link-row">
+              <a href="https://houston-fuel-tracker-dashboard.streamlit.app" class="text-link">View Dashboard →</a>
+              <a href="https://github.com/htorres38/Fuel-Tracker.git" class="text-link">GitHub →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <footer class="site-footer">
-    <p>Haylee Torres &nbsp;·&nbsp; Portfolio &nbsp;·&nbsp; 2026</p>
-  </footer>
+    <footer>
+      <div>Haylee Torres &middot; Portfolio &middot; 2026</div>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-

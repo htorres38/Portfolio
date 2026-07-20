@@ -1,17 +1,1 @@
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-._*
-
-
-# Editor directories
-.vscode/
-.idea/
-
-# Logs
-*.log
-
-# OS files
-Thumbs.db
-ehthumbs.db
+documents/
